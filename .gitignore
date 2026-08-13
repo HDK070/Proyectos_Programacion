@@ -30,3 +30,9 @@
 *.exe
 *.out
 *.app
+
+#ignore para vs
+.vs/
+
+#en caso de comodidad en vs code
+.vscode/
