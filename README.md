@@ -8,6 +8,6 @@
 
 *Al terminar de programar o querer hacer un cambio para que este no se pierda, en github desktop saldran que cambios se hicieron y simplemente darle a commit y puelo a push.*
 
-*En caso de querer usar git, ya son pasos más complejos de explicar, asi que veanse un videito.*
+>*En caso de querer usar git, ya son pasos más complejos de explicar, asi que veanse un videito.*
 
-<small>En caso de dudas, hablarme.</small>
+>En caso de dudas, hablarme.
