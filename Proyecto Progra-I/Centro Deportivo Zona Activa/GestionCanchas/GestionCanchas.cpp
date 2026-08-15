@@ -92,5 +92,6 @@ void GestionCanchas::modificarPrecio(string codigo, float nuevoPrecio) {
 GestionCanchas::~GestionCanchas() {
 	for (int i = 0; i < contador; i++) {
 		delete canchas[i];
+		canchas[i] = nullptr;
 	}
 }
