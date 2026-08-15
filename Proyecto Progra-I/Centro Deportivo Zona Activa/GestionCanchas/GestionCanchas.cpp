@@ -89,3 +89,8 @@ void GestionCanchas::modificarPrecio(string codigo, float nuevoPrecio) {
 		cout << "Cancha no encontrada." << endl;
 	}
 }
+GestionCanchas::~GestionCanchas() {
+	for (int i = 0; i < contador; i++) {
+		delete canchas[i];
+	}
+}
