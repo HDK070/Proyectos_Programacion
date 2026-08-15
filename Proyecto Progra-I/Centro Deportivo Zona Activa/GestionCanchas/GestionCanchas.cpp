@@ -35,7 +35,50 @@ void GestionCanchas::MostrarCanchas() {
 		cout << "Código: " << canchas[i]->getCodigo() << ", Tipo de Deporte: " << canchas[i]->getTipoDeporte() << ", Precio: " << canchas[i]->getPrecio() << endl;
 	}
 }
+Cancha* GestionCanchas::BuscarCancha(string codigo) {
+	for (int i = 0; i < contador; i++) {
+		if (canchas[i]->getCodigo() == codigo) {
+			return canchas[i];
+		}
+	}
+	return nullptr;
+}
+void GestionCanchas::mostrarDisponibilidad(string codigo) {
+	Cancha* cancha = BuscarCancha(codigo);
+	if (cancha == nullptr) {
+		cout << "Cancha no encontrada." << endl;
+		return;
+	}
 
+	bool disponible = true;
+	cout << "Disponibilidad de la cancha " << codigo << ":" << endl;
+	for (int i = 0; i < 12; i++) {
+		char estado = cancha->getFranja(i);
+		cout << "Franja " << i << ": ";
+
+		switch (estado) {
+		case 'L':
+			cout << "Libre";
+			break;
+		case 'O':
+			cout << "Ocupada";
+			disponible = false;
+			break;
+		case 'M':
+			cout << "Mantenimiento";
+			disponible = false;
+			break;
+		}
+		cout << endl;
+	}
+
+	if (disponible) {
+		cout << "La cancha esta disponible." << endl;
+	}
+	else {
+		cout << "La cancha no esta disponible." << endl;
+	}
+}
 void GestionCanchas::modificarPrecio(string codigo, float nuevoPrecio) {
 	Cancha* cancha = BuscarCancha(codigo);
 	if (cancha != nullptr) {
