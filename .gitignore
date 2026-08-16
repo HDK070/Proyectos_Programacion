@@ -11,10 +11,18 @@
 *.gch
 *.pch
 
+# Linker files
+*.ilk
+
+# Debugger Files
+*.pdb
+
 # Compiled Dynamic libraries
 *.so
 *.dylib
 *.dll
+*.so.*
+
 
 # Fortran module files
 *.mod
@@ -31,8 +39,35 @@
 *.out
 *.app
 
-#ignore para vs
-.vs/
+# Build directories
+build/
+Build/
+build-*/
 
-#en caso de comodidad en vs code
-.vscode/
+# CMake generated files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+install_manifest.txt
+compile_commands.json
+
+# Temporary files
+*.tmp
+*.log
+*.bak
+*.swp
+
+# vcpkg
+vcpkg_installed/
+
+# debug information files
+*.dwo
+
+# test output & cache
+Testing/
+.cache/
+/.vs
+/prueba/.vs
+/prueba/prueba/x64/Debug
+/Proyecto Progra-I/Centro Deportivo Zona Activa/.vs
