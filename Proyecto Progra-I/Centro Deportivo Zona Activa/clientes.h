@@ -12,9 +12,9 @@ private:
 
 public:
 
-	cliente(string nombre, string telefono, int identificacion);
 	cliente();
-	string toString();
+	cliente(string nombre, string telefono, int identificacion);
+	string toString() const;
 	~cliente();
 };
 

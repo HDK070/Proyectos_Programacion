@@ -11,7 +11,7 @@ cliente::cliente(string nombre, string telefono, int identificacion) {
 	this->telefono = telefono;
 	this->identificacion = identificacion;
 }
-string cliente::toString() {
+string cliente::toString() const {
 	stringstream s;
 	s << "Nombre: " << nombre << endl;
 	s << "Telefono: " << telefono << endl;
