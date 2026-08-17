@@ -12,4 +12,4 @@
 
 >*En caso de querer usar git, ya son pasos más complejos de explicar, asi que veanse un videito.*
 
->En caso de dudas, hablarme.
+>En caso de dudas, hablarme..
