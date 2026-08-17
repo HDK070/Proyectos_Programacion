@@ -1,42 +1,51 @@
 #include <iostream>
 #include <string>
+#include "clientes.h"
+#include "clientes.cpp"
+#include "Cancha.h"
+#include "Cancha.cpp"
+#include "GestionCanchas.h"
+#include "GestionCanchas.cpp"
+#include "GestionReserva.h"
+#include "GestionReserva.cpp"
+using namespace std;
 void Menu() {
 	int opcion;
 	do {
-		std::cout << "\tCENTRO DEPORTIVO ZONA ACTIVA" << std::endl;
-		std::cout << "1. Gestion de Canchas" << std::endl;
-		std::cout << "2. Gestion de Clientes" << std::endl;
-		std::cout << "3. Gestion de Reservas" << std::endl;
-		std::cout << "4. Gestion de listado de espera" << std::endl;
-		std::cout << "5. Reportes y estadisticas" << std::endl;
-		std::cout << "6. Salir" << std::endl;
-		std::cout << "Ingrese su opcion: ";
-		std::cin >> opcion;
-		if (std::cin.fail()) { //Detecta si la entrada es invalida (no es un numero)
-			std::cin.clear(); // reinicia el estado de error de cin
-			std::cin.ignore(100, '\n'); // saca del buffer la entrada invalida
-			std::cout << "Entrada invalida. Por favor, ingrese un numero." << std::endl;
+		cout << "\tCENTRO DEPORTIVO ZONA ACTIVA" << endl;
+		cout << "1. Gestion de Canchas" << endl;
+		cout << "2. Gestion de Clientes" << endl;
+		cout << "3. Gestion de Reservas" << endl;
+		cout << "4. Gestion de listado de espera" << endl;
+		cout << "5. Reportes y estadisticas" << endl;
+		cout << "6. Salir" << endl;
+		cout << "Ingrese su opcion: ";
+		cin >> opcion;
+		if (cin.fail()) { //Detecta si la entrada es invalida (no es un numero)
+			cin.clear(); // reinicia el estado de error de cin
+			cin.ignore(100, '\n'); // saca del buffer la entrada invalida
+			cout << "Entrada invalida. Por favor, ingrese un numero." << endl;
 		}else if (opcion < 1 || opcion > 6) {
-		std::cout << "Opcion invalida. Por favor, ingrese una opcion valida." << std::endl;
+		cout << "Opcion invalida. Por favor, ingrese una opcion valida." << endl;
 		}else {
 		switch (opcion) {
 		case 1:
-			std::cout << "Opcion 1 seleccionada" << std::endl;
+			cout << "Opcion 1 seleccionada" << endl;
 			break;
 		case 2:
-			std::cout << "Opcion 2 seleccionada" << std::endl;
+			cout << "Opcion 2 seleccionada" << endl;
 			break;
 		case 3:
-			std::cout << "Opcion 3 seleccionada" << std::endl;
+			cout << "Opcion 3 seleccionada" << endl;
 			break;
 		case 4:
-			std::cout << "Opcion 4 seleccionada" << std::endl;
+			cout << "Opcion 4 seleccionada" << endl;
 			break;
 		case 5:
-			std::cout << "opcion 5 seleccionada" << std::endl;
+			cout << "opcion 5 seleccionada" << endl;
 			break;
 		case 6:
-			std::cout << "saliendo del programa..." << std::endl;
+			cout << "saliendo del programa..." << endl;
 			break;
 			}
 		}
