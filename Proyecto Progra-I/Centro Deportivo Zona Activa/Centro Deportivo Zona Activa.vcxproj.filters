@@ -27,12 +27,18 @@
     <ClCompile Include="GestionCanchas.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
+    <ClCompile Include="GestionReserva.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
     <ClCompile Include="clientes.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Cancha.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="GestionReserva.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
     <ClInclude Include="clientes.h">
