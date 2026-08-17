@@ -140,12 +140,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Cancha.cpp" />
+    <ClCompile Include="clientes.cpp" />
     <ClCompile Include="GestionCanchas.cpp" />
     <ClCompile Include="GestionCanchas.h" />
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Cancha.h" />
+    <ClInclude Include="clientes.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
