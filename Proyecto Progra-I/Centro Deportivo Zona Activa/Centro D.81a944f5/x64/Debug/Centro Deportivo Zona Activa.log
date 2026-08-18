@@ -3,7 +3,28 @@
   Compilando...
   GestionCanchas.h
   Cancha.cpp
+  clientes.cpp
   GestionCanchas.cpp
+  GestionReserva.cpp
   Main.cpp
   Generando código...
-  Centro Deportivo Zona Activa.vcxproj -> C:\Users\castr\Documents\GitHub\Proyectos_Programacion\Proyecto Progra-I\Centro Deportivo Zona Activa\x64\Debug\Centro Deportivo Zona Activa.exe
+  LINK : no se encontró C:\Users\sebas\OneDrive\Documentos\GitHub\Proyectos_Programacion\Proyecto Progra-I\Centro Deportivo Zona Activa\x64\Debug\Centro Deportivo Zona Activa.exe o no lo generó el último vínculo incremental; ejecutando vínculo completo
+Main.obj : error LNK2005: ya se definió "public: __cdecl Cancha::Cancha(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,float)" (??0Cancha@@QEAA@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0M@Z) en Cancha.obj
+Main.obj : error LNK2005: ya se definió "public: __cdecl GestionCanchas::GestionCanchas(void)" (??0GestionCanchas@@QEAA@XZ) en GestionCanchas.obj
+Main.obj : error LNK2005: ya se definió "public: __cdecl cliente::cliente(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,int)" (??0cliente@@QEAA@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0H@Z) en clientes.obj
+Main.obj : error LNK2005: ya se definió "public: __cdecl cliente::cliente(void)" (??0cliente@@QEAA@XZ) en clientes.obj
+Main.obj : error LNK2005: ya se definió "public: __cdecl GestionCanchas::~GestionCanchas(void)" (??1GestionCanchas@@QEAA@XZ) en GestionCanchas.obj
+Main.obj : error LNK2005: ya se definió "public: __cdecl cliente::~cliente(void)" (??1cliente@@QEAA@XZ) en clientes.obj
+Main.obj : error LNK2005: ya se definió "public: class Cancha * __cdecl GestionCanchas::BuscarCancha(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (?BuscarCancha@GestionCanchas@@QEAAPEAVCancha@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z) en GestionCanchas.obj
+Main.obj : error LNK2005: ya se definió "public: void __cdecl GestionCanchas::MostrarCanchas(void)" (?MostrarCanchas@GestionCanchas@@QEAAXXZ) en GestionCanchas.obj
+Main.obj : error LNK2005: ya se definió "public: void __cdecl GestionCanchas::RegistrarCancha(void)" (?RegistrarCancha@GestionCanchas@@QEAAXXZ) en GestionCanchas.obj
+Main.obj : error LNK2005: ya se definió "public: class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __cdecl Cancha::getCodigo(void)" (?getCodigo@Cancha@@QEAA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ) en Cancha.obj
+Main.obj : error LNK2005: ya se definió "public: char __cdecl Cancha::getFranja(int)" (?getFranja@Cancha@@QEAADH@Z) en Cancha.obj
+Main.obj : error LNK2005: ya se definió "public: float __cdecl Cancha::getPrecio(void)" (?getPrecio@Cancha@@QEAAMXZ) en Cancha.obj
+Main.obj : error LNK2005: ya se definió "public: class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __cdecl Cancha::getTipoDeporte(void)" (?getTipoDeporte@Cancha@@QEAA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ) en Cancha.obj
+Main.obj : error LNK2005: ya se definió "public: void __cdecl GestionCanchas::modificarPrecio(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,float)" (?modificarPrecio@GestionCanchas@@QEAAXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@M@Z) en GestionCanchas.obj
+Main.obj : error LNK2005: ya se definió "public: void __cdecl GestionCanchas::mostrarDisponibilidad(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (?mostrarDisponibilidad@GestionCanchas@@QEAAXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z) en GestionCanchas.obj
+Main.obj : error LNK2005: ya se definió "public: void __cdecl Cancha::setFranja(int,char)" (?setFranja@Cancha@@QEAAXHD@Z) en Cancha.obj
+Main.obj : error LNK2005: ya se definió "public: void __cdecl Cancha::setPrecio(float)" (?setPrecio@Cancha@@QEAAXM@Z) en Cancha.obj
+Main.obj : error LNK2005: ya se definió "public: class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __cdecl cliente::toString(void)const " (?toString@cliente@@QEBA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ) en clientes.obj
+C:\Users\sebas\OneDrive\Documentos\GitHub\Proyectos_Programacion\Proyecto Progra-I\Centro Deportivo Zona Activa\x64\Debug\Centro Deportivo Zona Activa.exe : fatal error LNK1169: se encontraron uno o más símbolos definidos simultáneamente
