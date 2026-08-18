@@ -1,7 +1,6 @@
 #include <iostream>
 #include <string>
 
-
 void Menu()  {
 	int opcion;
 	do {
