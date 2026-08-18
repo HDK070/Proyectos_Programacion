@@ -1,30 +1,36 @@
 ﻿  Examinando orígenes para las dependencias de módulo...
-  GestionCanchas.h
   Compilando...
   GestionCanchas.h
-  Cancha.cpp
-  clientes.cpp
-  GestionCanchas.cpp
-  GestionReserva.cpp
-  Main.cpp
-  Generando código...
-  LINK : no se encontró C:\Users\sebas\OneDrive\Documentos\GitHub\Proyectos_Programacion\Proyecto Progra-I\Centro Deportivo Zona Activa\x64\Debug\Centro Deportivo Zona Activa.exe o no lo generó el último vínculo incremental; ejecutando vínculo completo
-Main.obj : error LNK2005: ya se definió "public: __cdecl Cancha::Cancha(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,float)" (??0Cancha@@QEAA@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0M@Z) en Cancha.obj
-Main.obj : error LNK2005: ya se definió "public: __cdecl GestionCanchas::GestionCanchas(void)" (??0GestionCanchas@@QEAA@XZ) en GestionCanchas.obj
-Main.obj : error LNK2005: ya se definió "public: __cdecl cliente::cliente(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,int)" (??0cliente@@QEAA@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0H@Z) en clientes.obj
-Main.obj : error LNK2005: ya se definió "public: __cdecl cliente::cliente(void)" (??0cliente@@QEAA@XZ) en clientes.obj
-Main.obj : error LNK2005: ya se definió "public: __cdecl GestionCanchas::~GestionCanchas(void)" (??1GestionCanchas@@QEAA@XZ) en GestionCanchas.obj
-Main.obj : error LNK2005: ya se definió "public: __cdecl cliente::~cliente(void)" (??1cliente@@QEAA@XZ) en clientes.obj
-Main.obj : error LNK2005: ya se definió "public: class Cancha * __cdecl GestionCanchas::BuscarCancha(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (?BuscarCancha@GestionCanchas@@QEAAPEAVCancha@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z) en GestionCanchas.obj
-Main.obj : error LNK2005: ya se definió "public: void __cdecl GestionCanchas::MostrarCanchas(void)" (?MostrarCanchas@GestionCanchas@@QEAAXXZ) en GestionCanchas.obj
-Main.obj : error LNK2005: ya se definió "public: void __cdecl GestionCanchas::RegistrarCancha(void)" (?RegistrarCancha@GestionCanchas@@QEAAXXZ) en GestionCanchas.obj
-Main.obj : error LNK2005: ya se definió "public: class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __cdecl Cancha::getCodigo(void)" (?getCodigo@Cancha@@QEAA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ) en Cancha.obj
-Main.obj : error LNK2005: ya se definió "public: char __cdecl Cancha::getFranja(int)" (?getFranja@Cancha@@QEAADH@Z) en Cancha.obj
-Main.obj : error LNK2005: ya se definió "public: float __cdecl Cancha::getPrecio(void)" (?getPrecio@Cancha@@QEAAMXZ) en Cancha.obj
-Main.obj : error LNK2005: ya se definió "public: class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __cdecl Cancha::getTipoDeporte(void)" (?getTipoDeporte@Cancha@@QEAA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ) en Cancha.obj
-Main.obj : error LNK2005: ya se definió "public: void __cdecl GestionCanchas::modificarPrecio(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,float)" (?modificarPrecio@GestionCanchas@@QEAAXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@M@Z) en GestionCanchas.obj
-Main.obj : error LNK2005: ya se definió "public: void __cdecl GestionCanchas::mostrarDisponibilidad(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (?mostrarDisponibilidad@GestionCanchas@@QEAAXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z) en GestionCanchas.obj
-Main.obj : error LNK2005: ya se definió "public: void __cdecl Cancha::setFranja(int,char)" (?setFranja@Cancha@@QEAAXHD@Z) en Cancha.obj
-Main.obj : error LNK2005: ya se definió "public: void __cdecl Cancha::setPrecio(float)" (?setPrecio@Cancha@@QEAAXM@Z) en Cancha.obj
-Main.obj : error LNK2005: ya se definió "public: class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __cdecl cliente::toString(void)const " (?toString@cliente@@QEBA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ) en clientes.obj
-C:\Users\sebas\OneDrive\Documentos\GitHub\Proyectos_Programacion\Proyecto Progra-I\Centro Deportivo Zona Activa\x64\Debug\Centro Deportivo Zona Activa.exe : fatal error LNK1169: se encontraron uno o más símbolos definidos simultáneamente
+C:\Users\sebas\OneDrive\Documentos\GitHub\Proyectos_Programacion\Proyecto Progra-I\Centro Deportivo Zona Activa\Cancha.h(5,9): error C3646: 'Codigo': especificador de invalidación desconocido
+  (compilando archivo de origen "GestionCanchas.h")
+  
+C:\Users\sebas\OneDrive\Documentos\GitHub\Proyectos_Programacion\Proyecto Progra-I\Centro Deportivo Zona Activa\Cancha.h(5,2): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+  (compilando archivo de origen "GestionCanchas.h")
+  
+C:\Users\sebas\OneDrive\Documentos\GitHub\Proyectos_Programacion\Proyecto Progra-I\Centro Deportivo Zona Activa\Cancha.h(6,9): error C3646: 'TipoDeporte': especificador de invalidación desconocido
+  (compilando archivo de origen "GestionCanchas.h")
+  
+C:\Users\sebas\OneDrive\Documentos\GitHub\Proyectos_Programacion\Proyecto Progra-I\Centro Deportivo Zona Activa\Cancha.h(6,2): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+  (compilando archivo de origen "GestionCanchas.h")
+  
+C:\Users\sebas\OneDrive\Documentos\GitHub\Proyectos_Programacion\Proyecto Progra-I\Centro Deportivo Zona Activa\Cancha.h(10,9): error C2061: error de sintaxis: identificador 'string'
+  (compilando archivo de origen "GestionCanchas.h")
+  
+C:\Users\sebas\OneDrive\Documentos\GitHub\Proyectos_Programacion\Proyecto Progra-I\Centro Deportivo Zona Activa\Cancha.h(11,9): error C3646: 'getCodigo': especificador de invalidación desconocido
+  (compilando archivo de origen "GestionCanchas.h")
+  
+C:\Users\sebas\OneDrive\Documentos\GitHub\Proyectos_Programacion\Proyecto Progra-I\Centro Deportivo Zona Activa\Cancha.h(11,18): error C2059: error de sintaxis: '('
+  (compilando archivo de origen "GestionCanchas.h")
+  
+C:\Users\sebas\OneDrive\Documentos\GitHub\Proyectos_Programacion\Proyecto Progra-I\Centro Deportivo Zona Activa\Cancha.h(11,20): error C2238: símbolos (token) inesperados delante de ';'
+  (compilando archivo de origen "GestionCanchas.h")
+  
+C:\Users\sebas\OneDrive\Documentos\GitHub\Proyectos_Programacion\Proyecto Progra-I\Centro Deportivo Zona Activa\Cancha.h(12,9): error C3646: 'getTipoDeporte': especificador de invalidación desconocido
+  (compilando archivo de origen "GestionCanchas.h")
+  
+C:\Users\sebas\OneDrive\Documentos\GitHub\Proyectos_Programacion\Proyecto Progra-I\Centro Deportivo Zona Activa\Cancha.h(12,23): error C2059: error de sintaxis: '('
+  (compilando archivo de origen "GestionCanchas.h")
+  
+C:\Users\sebas\OneDrive\Documentos\GitHub\Proyectos_Programacion\Proyecto Progra-I\Centro Deportivo Zona Activa\Cancha.h(12,25): error C2238: símbolos (token) inesperados delante de ';'
+  (compilando archivo de origen "GestionCanchas.h")
+  

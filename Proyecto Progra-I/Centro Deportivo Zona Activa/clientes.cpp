@@ -1,6 +1,6 @@
 #include "clientes.h"
 #include <string>
-
+using namespace std;
 cliente::cliente() {
 	this->nombre = "Desconocido";
 	this->telefono = "Desconocido";
