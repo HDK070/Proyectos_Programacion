@@ -3,8 +3,8 @@
 #include <sstream>
 #include <string>
 
-const int MAX = 50;
-class cliente[MAX] {
+
+class cliente {
 private:
 	string nombre;
 	string telefono;
