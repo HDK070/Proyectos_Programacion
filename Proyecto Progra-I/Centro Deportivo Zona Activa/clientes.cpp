@@ -55,7 +55,15 @@ void menuCliente() {
 		}
 	} while (opcion != 4);
 }
-
+string cliente::listado() const {
+	stringstream s;
+	for(int i = 0; i < MAX; i++) {
+		s << "Nombre: " << nombre << endl;
+		s << "Telefono: " << telefono << endl;
+		s << "Identificacion: " << identificacion << endl;
+	}
+	return s.str();
+}
 string cliente::toString() const {
 	stringstream s;
 	s << "Nombre: " << nombre << endl;
@@ -63,6 +71,7 @@ string cliente::toString() const {
 	s << "Identificacion: " << identificacion << endl;
 	return s.str();
 }
+
 cliente::~cliente() {
 	cout << "Se ha eliminado al cliente: " << nombre << endl;
 }

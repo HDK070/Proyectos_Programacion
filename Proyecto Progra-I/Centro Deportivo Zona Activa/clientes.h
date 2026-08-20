@@ -3,8 +3,8 @@
 #include <sstream>
 #include <string>
 
-
-class cliente {
+const int MAX = 50;
+class cliente[MAX] {
 private:
 	string nombre;
 	string telefono;
@@ -18,6 +18,7 @@ public:
 	void registrarCliente(string nombre, string telefono, int identificacion); 
 	cliente buscarClienteXID(int identificacion);
 	void mostrarReservaCliente(int identificacion);
+	string listado();
 	string toString() const;
 	~cliente();
 
