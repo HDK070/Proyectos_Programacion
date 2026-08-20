@@ -8,6 +8,7 @@
 
 
 gestionClientes::gestionClientes(){
+	cliente* clientes[MAX];
 	this->tam = MAX;
 	this->cantidadClientes = 0;
 }
@@ -15,9 +16,11 @@ gestionClientes::gestionClientes(){
 string gestionClientes::listado() {
 	stringstream s;
 	for (int i = 0; i < cantidadClientes; i++) {
+		s << "------------------------" << endl;
 		s << "Nombre: " << clientes[i]->getNombre() << endl;
 		s << "Telefono: " << clientes[i]->getTelefono() << endl;
 		s << "Identificacion: " << clientes[i]->getIdentificacion() << endl;
+		s << "------------------------" << endl;
 	}
 	return s.str();
 }
@@ -40,17 +43,16 @@ void gestionClientes::registrarClientes() {
 	}
 }
 
-void gestionClientes::eliminarCliente(int identificacion) {
+string gestionClientes::eliminarCliente(int identificacion) {
 	for (int i = 0; i < cantidadClientes; i++) {
 		if (clientes[i]->getIdentificacion() == identificacion) {
 			delete clientes[i];
-			clientes[i] = nullptr;
 			cantidadClientes--;
-			cout << "Cliente eliminado." << endl;
-			return;
+			return  "Cliente eliminado.";
+			
 		}
 	}
-	cout << "Cliente no encontrado." << endl;
+	return "Cliente no encontrado.";
 }
 
 string gestionClientes::toString(int identificacion) {
