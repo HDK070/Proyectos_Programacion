@@ -19,6 +19,5 @@ public:
 	void eliminarCliente(int identificacion);
 	string listado();
 	string toString(int identificacion);
-	void buscarCliente(int identificacion);
 };
 

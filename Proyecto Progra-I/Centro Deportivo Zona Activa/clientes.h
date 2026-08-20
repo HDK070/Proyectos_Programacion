@@ -18,8 +18,5 @@ public:
 	string getTelefono() const;
 	int getIdentificacion() const;
 	
-
-
-
 };
 

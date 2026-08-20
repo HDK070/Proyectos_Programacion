@@ -1,6 +1,6 @@
 #include "Cancha.h"
 #include <iostream>
-using namespace std;
+
 
 Cancha::Cancha(string Codigo, string TipoDeporte, float precio) {
 	this->Codigo = Codigo;

@@ -7,7 +7,7 @@
 // mostrar las reservas realizadas por un cliente especifico. aca va la funcion
 
 
-gestionClientes::gestionClientes() {
+gestionClientes::gestionClientes(){
 	this->tam = MAX;
 	this->cantidadClientes = 0;
 }
@@ -39,18 +39,6 @@ void gestionClientes::registrarClientes() {
 		cout << "No se pueden registrar mas clientes." << endl;
 	}
 }
-void gestionClientes::buscarCliente(int identificacion) {
-	for (int i = 0; i < cantidadClientes; i++) {
-		if (clientes[i]->getIdentificacion() == identificacion) {
-			cout << "Cliente encontrado:" << endl;
-			cout << "Nombre: " << clientes[i]->getNombre() << endl;
-			cout << "Telefono: " << clientes[i]->getTelefono() << endl;
-			cout << "Identificacion: " << clientes[i]->getIdentificacion() << endl;
-			return;
-		}
-	}
-	cout << "Cliente no encontrado." << endl;
-}
 
 void gestionClientes::eliminarCliente(int identificacion) {
 	for (int i = 0; i < cantidadClientes; i++) {
@@ -77,4 +65,7 @@ string gestionClientes::toString(int identificacion) {
 	}
 	return string("Cliente no encontrado");
 }
+
+
+
 

@@ -1,36 +1,12 @@
 ﻿  Examinando orígenes para las dependencias de módulo...
+  GestionCanchas.h
   Compilando...
   GestionCanchas.h
-C:\Users\sebas\OneDrive\Documentos\GitHub\Proyectos_Programacion\Proyecto Progra-I\Centro Deportivo Zona Activa\Cancha.h(5,9): error C3646: 'Codigo': especificador de invalidación desconocido
-  (compilando archivo de origen "GestionCanchas.h")
-  
-C:\Users\sebas\OneDrive\Documentos\GitHub\Proyectos_Programacion\Proyecto Progra-I\Centro Deportivo Zona Activa\Cancha.h(5,2): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
-  (compilando archivo de origen "GestionCanchas.h")
-  
-C:\Users\sebas\OneDrive\Documentos\GitHub\Proyectos_Programacion\Proyecto Progra-I\Centro Deportivo Zona Activa\Cancha.h(6,9): error C3646: 'TipoDeporte': especificador de invalidación desconocido
-  (compilando archivo de origen "GestionCanchas.h")
-  
-C:\Users\sebas\OneDrive\Documentos\GitHub\Proyectos_Programacion\Proyecto Progra-I\Centro Deportivo Zona Activa\Cancha.h(6,2): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
-  (compilando archivo de origen "GestionCanchas.h")
-  
-C:\Users\sebas\OneDrive\Documentos\GitHub\Proyectos_Programacion\Proyecto Progra-I\Centro Deportivo Zona Activa\Cancha.h(10,9): error C2061: error de sintaxis: identificador 'string'
-  (compilando archivo de origen "GestionCanchas.h")
-  
-C:\Users\sebas\OneDrive\Documentos\GitHub\Proyectos_Programacion\Proyecto Progra-I\Centro Deportivo Zona Activa\Cancha.h(11,9): error C3646: 'getCodigo': especificador de invalidación desconocido
-  (compilando archivo de origen "GestionCanchas.h")
-  
-C:\Users\sebas\OneDrive\Documentos\GitHub\Proyectos_Programacion\Proyecto Progra-I\Centro Deportivo Zona Activa\Cancha.h(11,18): error C2059: error de sintaxis: '('
-  (compilando archivo de origen "GestionCanchas.h")
-  
-C:\Users\sebas\OneDrive\Documentos\GitHub\Proyectos_Programacion\Proyecto Progra-I\Centro Deportivo Zona Activa\Cancha.h(11,20): error C2238: símbolos (token) inesperados delante de ';'
-  (compilando archivo de origen "GestionCanchas.h")
-  
-C:\Users\sebas\OneDrive\Documentos\GitHub\Proyectos_Programacion\Proyecto Progra-I\Centro Deportivo Zona Activa\Cancha.h(12,9): error C3646: 'getTipoDeporte': especificador de invalidación desconocido
-  (compilando archivo de origen "GestionCanchas.h")
-  
-C:\Users\sebas\OneDrive\Documentos\GitHub\Proyectos_Programacion\Proyecto Progra-I\Centro Deportivo Zona Activa\Cancha.h(12,23): error C2059: error de sintaxis: '('
-  (compilando archivo de origen "GestionCanchas.h")
-  
-C:\Users\sebas\OneDrive\Documentos\GitHub\Proyectos_Programacion\Proyecto Progra-I\Centro Deportivo Zona Activa\Cancha.h(12,25): error C2238: símbolos (token) inesperados delante de ';'
-  (compilando archivo de origen "GestionCanchas.h")
-  
+  Cancha.cpp
+  clientes.cpp
+  GestionCanchas.cpp
+  gestionClientes.cpp
+  GestionReserva.cpp
+  Main.cpp
+  Generando código...
+  Centro Deportivo Zona Activa.vcxproj -> C:\Users\sebas\OneDrive\Documentos\GitHub\Proyectos_Programacion\Proyecto Progra-I\Centro Deportivo Zona Activa\x64\Debug\Centro Deportivo Zona Activa.exe
