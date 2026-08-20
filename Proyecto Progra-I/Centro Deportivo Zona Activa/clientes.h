@@ -2,6 +2,7 @@
 #include <iostream>
 #include <sstream>
 #include <string>
+using namespace std;
 
 
 class cliente {
@@ -12,15 +13,12 @@ private:
 
 public:
 
-	cliente();
 	cliente(string nombre, string telefono, int identificacion);
-	void menuCliente();
-	void registrarCliente(string nombre, string telefono, int identificacion); 
-	cliente buscarClienteXID(int identificacion);
-	void mostrarReservaCliente(int identificacion);
-	string listado();
-	string toString() const;
-	~cliente();
+	string getNombre() const;
+	string getTelefono() const;
+	int getIdentificacion() const;
+	
+
 
 
 };
