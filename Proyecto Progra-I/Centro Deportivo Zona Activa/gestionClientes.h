@@ -15,8 +15,8 @@ private:
 
 public:
 	gestionClientes();
-	void registrarClientes();
-	void eliminarCliente(int identificacion);
+	string registrarClientes();
+	string eliminarCliente(int identificacion);
 	string listado();
 	string toString(int identificacion);
 };
