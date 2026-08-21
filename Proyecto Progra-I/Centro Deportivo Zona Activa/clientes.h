@@ -4,7 +4,6 @@
 #include <string>
 using namespace std;
 
-
 class cliente {
 private:
 	string nombre;
@@ -12,13 +11,13 @@ private:
 	int identificacion;
 
 public:
-
+	cliente();
 	cliente(string nombre, string telefono, int identificacion);
-	void getNombre() ;
-	void getIdentificacion() ;
-	void getTelefono() ;
-	string setNombre(string nombre);
-	string setTelefono(string telefono);
-	int setIdentificacion(int identificacion);
-};
 
+	string getNombre() const;
+	int getIdentificacion() const;
+	string getTelefono() const;
+	void setNombre(string nombre);
+	void setTelefono(string telefono);
+	void setIdentificacion(int identificacion);
+};

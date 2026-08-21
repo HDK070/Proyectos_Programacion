@@ -4,12 +4,11 @@
 #include <sstream>
 #include <string>
 
-// mostrar las reservas realizadas por un cliente especifico. aca va la funcion
-
-
-gestionClientes::gestionClientes(){
-	cliente* clientes[MAX];
-	this->cantidadClientes = 0;
+gestionClientes::gestionClientes() {
+	for (int i = 0; i < MAX; ++i) {
+		clientes[i] = nullptr; 
+		this->cantidadClientes = 0;
+	}
 }
 
 string gestionClientes::listado() {
@@ -44,7 +43,7 @@ void gestionClientes::registrarClientes() {
 
 string gestionClientes::eliminarCliente(int identificacion) {
 	for (int i = 0; i < cantidadClientes; i++) {
-		if (clientes[i]->getIdentificacion() == identificacion) {
+		if (clientes[i] && clientes[i]->getIdentificacion() == identificacion) {
 			delete clientes[i];
 			cantidadClientes--;
 			return  "Cliente eliminado.";
@@ -57,7 +56,7 @@ string gestionClientes::eliminarCliente(int identificacion) {
 string gestionClientes::toString(int identificacion) {
 	stringstream s;
 	for (int i = 0; i < cantidadClientes; i++) {
-		if (clientes[i]->getIdentificacion() == identificacion) {
+		if (clientes[i] && clientes[i]->getIdentificacion() == identificacion) {
 			s << "Nombre: " << clientes[i]->getNombre() << endl;
 			s << "Telefono: " << clientes[i]->getTelefono() << endl;
 			s << "Identificacion: " << clientes[i]->getIdentificacion() << endl;
