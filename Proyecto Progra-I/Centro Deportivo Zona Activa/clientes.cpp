@@ -20,13 +20,13 @@ string setTelefono(string telefono) {
 string setNombre(int identificacion){
 	this->identificacion = identificacion;
 }
-void getNombre() const {
+void getNombre()  {
 	return cliente::nombre;
 }
-void getTelefono() const {
+void getTelefono()  {
 	return cliente::telefono;
 }
-void getIdentificacion() const {
+void getIdentificacion()  {
 	return cliente::identificacion;
 }
 
