@@ -14,9 +14,6 @@ private:
 public:
 
 	cliente(string nombre, string telefono, int identificacion);
-	string getNombre() const;
-	string getTelefono() const;
-	int getIdentificacion() const;
 	
 };
 

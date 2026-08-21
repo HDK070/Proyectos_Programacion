@@ -6,7 +6,7 @@
 using namespace std;
 
 const int MAX = 100;
-class gestionClientes {
+class gestionClientes{
 private:
 
 	cliente* clientes[MAX];

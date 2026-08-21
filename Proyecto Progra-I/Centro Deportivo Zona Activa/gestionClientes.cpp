@@ -9,7 +9,6 @@
 
 gestionClientes::gestionClientes(){
 	cliente* clientes[MAX];
-	this->tam = MAX;
 	this->cantidadClientes = 0;
 }
 
@@ -26,7 +25,7 @@ string gestionClientes::listado() {
 }
 
 void gestionClientes::registrarClientes() {
-	if (cantidadClientes < tam) {
+	if (cantidadClientes < MAX) {
 		string nombre, telefono;
 		int identificacion;
 		cout << "Ingrese el nombre del cliente: ";
@@ -58,7 +57,7 @@ string gestionClientes::eliminarCliente(int identificacion) {
 string gestionClientes::toString(int identificacion) {
 	stringstream s;
 	for (int i = 0; i < cantidadClientes; i++) {
-		if (clientes[i] && clientes[i]->getIdentificacion() == identificacion) {
+		if (clientes[i]->identificacion() == identificacion) {
 			s << "Nombre: " << clientes[i]->getNombre() << endl;
 			s << "Telefono: " << clientes[i]->getTelefono() << endl;
 			s << "Identificacion: " << clientes[i]->getIdentificacion() << endl;
