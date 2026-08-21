@@ -10,8 +10,7 @@ class gestionClientes{
 private:
 
 	cliente* clientes[MAX];
-	int tam;
-	int cantidadClientes;
+	static int cantidadClientes;
 
 public:
 	gestionClientes();

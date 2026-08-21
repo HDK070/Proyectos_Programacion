@@ -14,9 +14,9 @@ private:
 public:
 
 	cliente(string nombre, string telefono, int identificacion);
-	void getNombre() const;
-	void getIdentificacion() const;
-	void getTelefono() const;
+	void getNombre() ;
+	void getIdentificacion() ;
+	void getTelefono() ;
 	string setNombre(string nombre);
 	string setTelefono(string telefono);
 	int setIdentificacion(int identificacion);
