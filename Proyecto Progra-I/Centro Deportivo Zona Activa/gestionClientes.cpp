@@ -57,7 +57,7 @@ string gestionClientes::eliminarCliente(int identificacion) {
 string gestionClientes::toString(int identificacion) {
 	stringstream s;
 	for (int i = 0; i < cantidadClientes; i++) {
-		if (clientes[i]->identificacion() == identificacion) {
+		if (clientes[i]->getIdentificacion() == identificacion) {
 			s << "Nombre: " << clientes[i]->getNombre() << endl;
 			s << "Telefono: " << clientes[i]->getTelefono() << endl;
 			s << "Identificacion: " << clientes[i]->getIdentificacion() << endl;
