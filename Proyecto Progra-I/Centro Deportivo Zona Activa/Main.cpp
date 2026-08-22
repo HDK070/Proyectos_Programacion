@@ -1,5 +1,8 @@
 #include <iostream>
 #include <string>
+#include "gestionClientes.h"
+#include "GestionReserva.h"
+#include "GestionCanchas.h"
 using namespace std;
 void Menu()  {
 	int opcion;

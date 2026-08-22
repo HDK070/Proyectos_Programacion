@@ -3,7 +3,7 @@
 #include <sstream>
 #include <string>
 #include "clientes.h"
-
+using namespace std;
 
 const int MAX = 100;
 class gestionClientes{

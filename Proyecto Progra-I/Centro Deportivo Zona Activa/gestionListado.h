@@ -10,7 +10,6 @@ const int MAX = 10;
 class gestionListado{
 	listadoEspera num[MAX];
 	int cantidad;
-	int posicion;
 public:
 
 	gestionListado();
