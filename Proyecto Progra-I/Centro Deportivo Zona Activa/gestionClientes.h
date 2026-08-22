@@ -8,7 +8,7 @@ using namespace std;
 const int MAX = 100;
 class gestionClientes{
 private:
-	cliente* clientes[MAX];
+	cliente* cliente[MAX];
 	int cantidadClientes;
 
 public:
