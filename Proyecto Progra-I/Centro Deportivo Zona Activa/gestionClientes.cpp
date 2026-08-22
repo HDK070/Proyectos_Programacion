@@ -5,9 +5,9 @@
 #include <string>
 
 gestionClientes::gestionClientes() {
-	for (int i = 0; i < MAX; ++i) {
+	for (int i = 0; i < MAX; i++) {
 		clientes[i] = nullptr; 
-		this->cantidadClientes = 0;
+		cantidadClientes = 0;
 	}
 }
 
@@ -43,7 +43,7 @@ void gestionClientes::registrarClientes() {
 
 string gestionClientes::eliminarCliente(int identificacion) {
 	for (int i = 0; i < cantidadClientes; i++) {
-		if (clientes[i] && clientes[i]->getIdentificacion() == identificacion) {
+		if (clientes[i]->getIdentificacion() == identificacion) {
 			delete clientes[i];
 			cantidadClientes--;
 			return  "Cliente eliminado.";
@@ -56,7 +56,7 @@ string gestionClientes::eliminarCliente(int identificacion) {
 string gestionClientes::toString(int identificacion) {
 	stringstream s;
 	for (int i = 0; i < cantidadClientes; i++) {
-		if (clientes[i] && clientes[i]->getIdentificacion() == identificacion) {
+		if (clientes[i]->getIdentificacion() == identificacion) {
 			s << "Nombre: " << clientes[i]->getNombre() << endl;
 			s << "Telefono: " << clientes[i]->getTelefono() << endl;
 			s << "Identificacion: " << clientes[i]->getIdentificacion() << endl;
