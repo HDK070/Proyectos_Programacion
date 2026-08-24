@@ -1,5 +1,6 @@
 #include "gestionClientes.h"
 #include "GestionReserva.h"
+#include "clientes.h"
 #include <iostream>
 #include <sstream>
 #include <string>
