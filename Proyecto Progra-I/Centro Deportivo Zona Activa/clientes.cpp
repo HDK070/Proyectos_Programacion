@@ -14,8 +14,6 @@ cliente::cliente(string nombre, string telefono, int identificacion) {
 	this->identificacion = identificacion;
 }
 
-
-
 void cliente::setNombre(string nombre) {
 	this->nombre = nombre;
 }

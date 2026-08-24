@@ -6,8 +6,8 @@ using namespace std;
 
 class Reserva {
 private:
-	cliente* Cliente;
-	Cancha* cancha;
+	cliente* clientes;
+	Cancha* canchas;
 public:
 
 };
