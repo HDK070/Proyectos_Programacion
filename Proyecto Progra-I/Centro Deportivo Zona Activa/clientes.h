@@ -13,11 +13,13 @@ private:
 public:
 	cliente();
 	cliente(string nombre, string telefono, int identificacion);
-
+	~cliente();
 	string getNombre() const;
 	int getIdentificacion() const;
 	string getTelefono() const;
 	void setNombre(string nombre);
 	void setTelefono(string telefono);
 	void setIdentificacion(int identificacion);
+	string toString();
+	
 };

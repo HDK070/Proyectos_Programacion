@@ -14,6 +14,8 @@ cliente::cliente(string nombre, string telefono, int identificacion) {
 	this->identificacion = identificacion;
 }
 
+cliente::~cliente(){}
+
 void cliente::setNombre(string nombre) {
 	this->nombre = nombre;
 }
@@ -40,3 +42,5 @@ string cliente::toString() {
 	s << "Identificacion: " << identificacion << endl;
 	return s.str();
 }
+
+

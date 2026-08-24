@@ -11,6 +11,13 @@ gestionClientes::gestionClientes() {
 		cantidadClientes = 0;
 	}
 }
+gestionClientes::~gestionClientes() {
+	for (int i = 0; i < MAX; ++i) {
+		delete clientes[i];
+		clientes[i] = nullptr;
+	}
+	cantidadClientes = 0;
+}
 
 void gestionClientes::registrarClientes() {
 	if (cantidadClientes < MAX) {
@@ -57,9 +64,7 @@ string gestionClientes::listado() {
 	stringstream s;
 	for (int i = 0; i < cantidadClientes; i++) {
 		s << "------------------------" << endl;
-		s << "Nombre: " << clientes[i]->getNombre() << endl;
-		s << "Telefono: " << clientes[i]->getTelefono() << endl;
-		s << "Identificacion: " << clientes[i]->getIdentificacion() << endl;
+		s << clientes[i]->toString();
 		s << "------------------------" << endl;
 	}
 	return s.str();

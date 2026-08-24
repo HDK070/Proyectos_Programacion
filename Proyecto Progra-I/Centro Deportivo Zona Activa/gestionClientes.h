@@ -8,14 +8,16 @@ using namespace std;
 const int MAX = 100;
 class gestionClientes{
 private:
-	cliente* cliente[MAX];
+	cliente* clientes[MAX];
 	int cantidadClientes;
 
 public:
 	gestionClientes();
+	~gestionClientes();
 	void registrarClientes();
 	string eliminarCliente(int identificacion);
 	string listado();
 	string toString(int identificacion);
+	
 };
 
