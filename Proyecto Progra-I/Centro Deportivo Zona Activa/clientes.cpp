@@ -14,7 +14,7 @@ cliente::cliente(string nombre, string telefono, int identificacion) {
 	this->identificacion = identificacion;
 }
 
-cliente::~cliente(){}
+
 
 void cliente::setNombre(string nombre) {
 	this->nombre = nombre;
@@ -34,6 +34,8 @@ string cliente::getTelefono() const {
 int cliente::getIdentificacion() const {
 	return identificacion;
 }
+
+cliente::~cliente(){}
 
 string cliente::toString() {
 	stringstream s;
