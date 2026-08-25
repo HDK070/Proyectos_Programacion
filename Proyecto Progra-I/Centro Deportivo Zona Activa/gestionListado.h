@@ -3,12 +3,14 @@
 #include <sstream>
 #include <string>
 #include "listadoEspera.h"
+#include "gestionClientes.h"
+#include "gestionCanchas.h"
 using namespace std;
 
 
 const int MAX = 10;
 class gestionListado{
-	listadoEspera num[MAX];
+	listadoEspera* num[MAX];
 	int cantidad=0;
 public:
 

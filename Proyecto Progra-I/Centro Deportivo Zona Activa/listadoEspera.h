@@ -9,7 +9,7 @@ using namespace std;
 
 class listadoEspera{
 private:
-	static int numConsecutivo;
+	int numConsecutivo;
 	cliente* clientePtr;
 	Cancha* canchaPtr;
 	char franja;
@@ -22,7 +22,7 @@ public:
 	void setCancha(Cancha* canchaPtr);
 	void setFranja(char franja);
 	void setEstado(char estado);
-
+	int getNumConsecutivo();
 
 };
 
