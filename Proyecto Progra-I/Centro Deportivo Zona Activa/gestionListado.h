@@ -15,7 +15,8 @@ class gestionListado{
 public:
 
 	gestionListado();
-	void registrarCliente(cliente* clientePtr);
+	~gestionListado();
+	void registrarCliente(cliente* clientePtr, Cancha* canchaPtr);
 	string listado();
 	string toString(int numConsecutivo);
 	bool existeDuplicado(cliente* clientePtr,Cancha* canchaPtr);

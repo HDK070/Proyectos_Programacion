@@ -13,15 +13,15 @@ private:
 	cliente* clientePtr;
 	Cancha* canchaPtr;
 	char franja;
-	char estado;
+	string estado;
 
 public:
 	listadoEspera();
-	listadoEspera(int numConsecutivo, cliente* clientePtr,Cancha* canchaPtr, char franja, char estado);
+	listadoEspera(int numConsecutivo, cliente* clientePtr,Cancha* canchaPtr, char franja, string estado);
 	void setCliente(cliente* clientePtr);
 	void setCancha(Cancha* canchaPtr);
 	void setFranja(char franja);
-	void setEstado(char estado);
+	void setEstado(string estado);
 	int getNumConsecutivo();
 
 };
