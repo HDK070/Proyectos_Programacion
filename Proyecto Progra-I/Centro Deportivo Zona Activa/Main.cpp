@@ -1,52 +1,57 @@
 #include <iostream>
-#include <string>
+#include "GestionCanchas.h"
 #include "gestionClientes.h"
 #include "GestionReserva.h"
-#include "GestionCanchas.h"
+#include "ReporteEstadistica.h"
 using namespace std;
-void Menu()  {
+
+
+void menuPrincipal(GestionCanchas& canchas, gestionClientes& clientes,
+	GestionReserva& reservas, ReporteEstadisticas& reportes) {
 	int opcion;
 	do {
-		cout << "\tCENTRO DEPORTIVO ZONA ACTIVA" << endl;
-		cout << "1. Gestion de Canchas" << endl;
-		cout << "2. Gestion de Clientes" << endl;
-		cout << "3. Gestion de Reservas" << endl;
-		cout << "4. Gestion de listado de espera" << endl;
-		cout << "5. Reportes y estadisticas" << endl;
-		cout << "6. Salir" << endl;
-		cout << "Ingrese su opcion: ";
+		cout << "\n===== CENTRO DEPORTIVO ZONA ACTIVA =====\n";
+		cout << "1. Gestion de canchas\n";
+		cout << "2. Gestion de clientes\n";
+		cout << "3. Gestion de reservas\n";
+		cout << "4. Gestion de listado de espera\n";
+		cout << "5. Reportes y estadisticas\n";
+		cout << "6. Salir\n";
+		cout << "Seleccione una opcion: ";
 		cin >> opcion;
-		if (cin.fail()) { //Detecta si la entrada es invalida (no es un numero)
-			cin.clear(); // reinicia el estado de error de cin
-			cin.ignore(100, '\n'); // saca del buffer la entrada invalida
-			cout << "Entrada invalida. Por favor, ingrese un numero." << endl;
-		}else if (opcion < 1 || opcion > 6) {
-		cout << "Opcion invalida. Por favor, ingrese una opcion valida." << endl;
-		}else {
+
 		switch (opcion) {
 		case 1:
-			cout << "Opcion 1 seleccionada" << endl;
+			canchas.RegistrarCancha();
 			break;
 		case 2:
-			cout << "Opcion 2 seleccionada" << endl;
+			clientes.registrarClientes();
 			break;
 		case 3:
-			cout << "Opcion 3 seleccionada" << endl;
+			reservas.RegistrarReserva();
 			break;
 		case 4:
-			cout << "Opcion 4 seleccionada" << endl;
+			cout << "(Modulo de listado de espera pendiente de otro integrante)\n";
 			break;
 		case 5:
-			cout << "opcion 5 seleccionada" << endl;
+			reportes.mostrarMenu();
 			break;
 		case 6:
-			cout << "saliendo del programa..." << endl;
+			cout << "Saliendo del sistema...\n";
 			break;
-			}
+		default:
+			cout << "Opcion invalida.\n";
 		}
 	} while (opcion != 6);
 }
+
 int main() {
-	Menu();
+	GestionCanchas canchas;
+	gestionClientes clientes;
+	GestionReserva reservas(&canchas, &clientes);
+	ReporteEstadisticas reportes(&canchas, &clientes, &reservas);
+
+	menuPrincipal(canchas, clientes, reservas, reportes);
+
 	return 0;
 }

@@ -5,14 +5,14 @@
         {
             "primary-output": "Centro D.81a944f5\\x64\\Debug\\GestionCanchas.h.obj",
             "outputs": [
-                "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Proyectos_Programacion\\Proyecto Progra-I\\Centro Deportivo Zona Activa\\Centro D.81a944f5\\x64\\Debug\\vc145.pdb",
+                "C:\\Users\\Sebas\\Desktop\\repositorios\\Proyecto Progra-I\\Centro Deportivo Zona Activa\\Centro D.81a944f5\\x64\\Debug\\vc145.pdb",
                 "Centro D.81a944f5\\x64\\Debug\\",
-                "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Proyectos_Programacion\\Proyecto Progra-I\\Centro Deportivo Zona Activa\\Centro D.81a944f5\\x64\\Debug\\GestionCanchas.h.ifc"
+                "C:\\Users\\Sebas\\Desktop\\repositorios\\Proyecto Progra-I\\Centro Deportivo Zona Activa\\Centro D.81a944f5\\x64\\Debug\\GestionCanchas.h.ifc"
             ],
             "provides": [
                 {
                     "logical-name": "GestionCanchas.h",
-                    "source-path": "c:\\users\\sebas\\onedrive\\documentos\\github\\proyectos_programacion\\proyecto progra-i\\centro deportivo zona activa\\gestioncanchas.h",
+                    "source-path": "c:\\users\\sebas\\desktop\\repositorios\\proyecto progra-i\\centro deportivo zona activa\\gestioncanchas.h",
                     "lookup-method": "absolute"
                 }
             ],

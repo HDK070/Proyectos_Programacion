@@ -14,5 +14,7 @@ public:
 	Cancha* BuscarCancha(string codigo);
 	void mostrarDisponibilidad(string codigo);
 	void modificarPrecio(string codigo, float nuevoPrecio);
+	int getContador();
+	Cancha* obtenerCancha(int indice);
 	~GestionCanchas();
 };

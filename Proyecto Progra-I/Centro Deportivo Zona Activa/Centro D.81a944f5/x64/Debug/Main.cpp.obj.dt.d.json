@@ -1,7 +1,7 @@
 {
     "Version": "1.2",
     "Data": {
-        "Source": "c:\\users\\sebas\\onedrive\\documentos\\github\\proyectos_programacion\\proyecto progra-i\\centro deportivo zona activa\\main.cpp",
+        "Source": "c:\\users\\sebas\\desktop\\repositorios\\proyecto progra-i\\centro deportivo zona activa\\main.cpp",
         "ProvidedModule": "",
         "Includes": [
             "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\iostream",
@@ -128,13 +128,15 @@
             "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\clocale",
             "c:\\program files (x86)\\windows kits\\10\\include\\10.0.26100.0\\ucrt\\locale.h",
             "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\ostream",
+            "c:\\users\\sebas\\desktop\\repositorios\\proyecto progra-i\\centro deportivo zona activa\\gestioncanchas.h",
             "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\string",
-            "c:\\users\\sebas\\onedrive\\documentos\\github\\proyectos_programacion\\proyecto progra-i\\centro deportivo zona activa\\gestionclientes.h",
+            "c:\\users\\sebas\\desktop\\repositorios\\proyecto progra-i\\centro deportivo zona activa\\cancha.h",
+            "c:\\users\\sebas\\desktop\\repositorios\\proyecto progra-i\\centro deportivo zona activa\\gestionclientes.h",
             "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\sstream",
-            "c:\\users\\sebas\\onedrive\\documentos\\github\\proyectos_programacion\\proyecto progra-i\\centro deportivo zona activa\\clientes.h",
-            "c:\\users\\sebas\\onedrive\\documentos\\github\\proyectos_programacion\\proyecto progra-i\\centro deportivo zona activa\\gestionreserva.h",
-            "c:\\users\\sebas\\onedrive\\documentos\\github\\proyectos_programacion\\proyecto progra-i\\centro deportivo zona activa\\cancha.h",
-            "c:\\users\\sebas\\onedrive\\documentos\\github\\proyectos_programacion\\proyecto progra-i\\centro deportivo zona activa\\gestioncanchas.h"
+            "c:\\users\\sebas\\desktop\\repositorios\\proyecto progra-i\\centro deportivo zona activa\\clientes.h",
+            "c:\\users\\sebas\\desktop\\repositorios\\proyecto progra-i\\centro deportivo zona activa\\gestionreserva.h",
+            "c:\\users\\sebas\\desktop\\repositorios\\proyecto progra-i\\centro deportivo zona activa\\reserva.h",
+            "c:\\users\\sebas\\desktop\\repositorios\\proyecto progra-i\\centro deportivo zona activa\\reporteestadistica.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

@@ -6,7 +6,7 @@
 using namespace std;
 
 const int MAX = 100;
-class gestionClientes{
+class gestionClientes {
 private:
 	cliente* clientes[MAX];
 	int cantidadClientes;
@@ -18,6 +18,7 @@ public:
 	string eliminarCliente(int identificacion);
 	string listado();
 	string toString(int identificacion);
-	
+	int getCantidadClientes();
+	cliente* obtenerCliente(int indice);
 };
 

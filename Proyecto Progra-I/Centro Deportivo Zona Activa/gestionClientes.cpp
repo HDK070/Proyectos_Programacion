@@ -7,7 +7,7 @@
 
 gestionClientes::gestionClientes() {
 	for (int i = 0; i < MAX; i++) {
-		clientes[i] = nullptr; 
+		clientes[i] = nullptr;
 		cantidadClientes = 0;
 	}
 }
@@ -40,11 +40,11 @@ void gestionClientes::registrarClientes() {
 string gestionClientes::eliminarCliente(int identificacion) {
 	for (int i = 0; i < cantidadClientes; i++) {
 		if (clientes[i]->getIdentificacion() == identificacion) {
-			clientes[i]=clientes[cantidadClientes-1];
-			clientes[cantidadClientes-1]=nullptr;
+			clientes[i] = clientes[cantidadClientes - 1];
+			clientes[cantidadClientes - 1] = nullptr;
 			cantidadClientes--;
 			return  "Cliente eliminado.";
-			
+
 		}
 	}
 	return "Cliente no encontrado.";
@@ -68,6 +68,18 @@ string gestionClientes::listado() {
 		s << "------------------------" << endl;
 	}
 	return s.str();
+}
+
+
+int gestionClientes::getCantidadClientes() {
+	return cantidadClientes;
+}
+
+cliente* gestionClientes::obtenerCliente(int indice) {
+	if (indice < 0 || indice >= cantidadClientes) {
+		return nullptr;
+	}
+	return clientes[indice];
 }
 
 
