@@ -1,48 +1,57 @@
 #include <iostream>
-#include <string>
-void Menu() {
+#include "GestionCanchas.h"
+#include "gestionClientes.h"
+#include "GestionReserva.h"
+#include "ReporteEstadistica.h"
+using namespace std;
+
+
+void menuPrincipal(GestionCanchas& canchas, gestionClientes& clientes,
+	GestionReserva& reservas, ReporteEstadisticas& reportes) {
 	int opcion;
 	do {
-		std::cout << "\tCENTRO DEPORTIVO ZONA ACTIVA" << std::endl;
-		std::cout << "1. Gestion de Canchas" << std::endl;
-		std::cout << "2. Gestion de Clientes" << std::endl;
-		std::cout << "3. Gestion de Reservas" << std::endl;
-		std::cout << "4. Gestion de listado de espera" << std::endl;
-		std::cout << "5. Reportes y estadisticas" << std::endl;
-		std::cout << "6. Salir" << std::endl;
-		std::cout << "Ingrese su opcion: ";
-		std::cin >> opcion;
-		if (std::cin.fail()) { //Detecta si la entrada es invalida (no es un numero)
-			std::cin.clear(); // reinicia el estado de error de cin
-			std::cin.ignore(100, '\n'); // saca del buffer la entrada invalida
-			std::cout << "Entrada invalida. Por favor, ingrese un numero." << std::endl;
-		}else if (opcion < 1 || opcion > 6) {
-		std::cout << "Opcion invalida. Por favor, ingrese una opcion valida." << std::endl;
-		}else {
+		cout << "\n===== CENTRO DEPORTIVO ZONA ACTIVA =====\n";
+		cout << "1. Gestion de canchas\n";
+		cout << "2. Gestion de clientes\n";
+		cout << "3. Gestion de reservas\n";
+		cout << "4. Gestion de listado de espera\n";
+		cout << "5. Reportes y estadisticas\n";
+		cout << "6. Salir\n";
+		cout << "Seleccione una opcion: ";
+		cin >> opcion;
+
 		switch (opcion) {
 		case 1:
-			std::cout << "Opcion 1 seleccionada" << std::endl;
+			canchas.RegistrarCancha();
 			break;
 		case 2:
-			std::cout << "Opcion 2 seleccionada" << std::endl;
+			clientes.registrarClientes();
 			break;
 		case 3:
-			std::cout << "Opcion 3 seleccionada" << std::endl;
+			reservas.RegistrarReserva();
 			break;
 		case 4:
-			std::cout << "Opcion 4 seleccionada" << std::endl;
+			cout << "(Modulo de listado de espera pendiente de otro integrante)\n";
 			break;
 		case 5:
-			std::cout << "opcion 5 seleccionada" << std::endl;
+			reportes.mostrarMenu();
 			break;
 		case 6:
-			std::cout << "saliendo del programa..." << std::endl;
+			cout << "Saliendo del sistema...\n";
 			break;
-			}
+		default:
+			cout << "Opcion invalida.\n";
 		}
 	} while (opcion != 6);
 }
+
 int main() {
-	Menu();
+	GestionCanchas canchas;
+	gestionClientes clientes;
+	GestionReserva reservas(&canchas, &clientes);
+	ReporteEstadisticas reportes(&canchas, &clientes, &reservas);
+
+	menuPrincipal(canchas, clientes, reservas, reportes);
+
 	return 0;
 }

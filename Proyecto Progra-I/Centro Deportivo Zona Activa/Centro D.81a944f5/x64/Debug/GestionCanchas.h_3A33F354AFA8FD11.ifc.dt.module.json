@@ -1,0 +1,22 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "Centro D.81a944f5\\x64\\Debug\\GestionCanchas.obj",
+            "outputs": [
+                "Centro D.81a944f5\\x64\\Debug\\GestionCanchas.h_3A33F354AFA8FD11.ifc.dt.module.json",
+                "Centro D.81a944f5\\x64\\Debug\\GestionCanchas.h_3A33F354AFA8FD11.ifc.dt.d.json",
+                "Centro D.81a944f5\\x64\\Debug\\GestionCanchas.h.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "D:\\Proyectos_Programacion\\Proyecto Progra-I\\Centro Deportivo Zona Activa\\GestionCanchas.h",
+                    "source-path": "d:\\proyectos_programacion\\proyecto progra-i\\centro deportivo zona activa\\gestioncanchas.h",
+                    "lookup-method": "absolute"
+                }
+            ],
+            "requires": []
+        }
+    ]
+}

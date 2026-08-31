@@ -8,6 +8,7 @@ private:
 	char franjas[12];
 	float precio;
 public:
+	Cancha();
 	Cancha(string Codigo, string TipoDeporte, float precio);
 	string getCodigo();
 	string getTipoDeporte();

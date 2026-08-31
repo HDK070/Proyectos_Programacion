@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "Centro D.81a944f5\\x64\\Debug\\listadoEspera.obj",
+            "outputs": [
+                "Centro D.81a944f5\\x64\\Debug\\listadoEspera.cpp.obj.dt.module.json",
+                "Centro D.81a944f5\\x64\\Debug\\listadoEspera.cpp.obj.dt.d.json"
+            ],
+            "requires": []
+        }
+    ]
+}

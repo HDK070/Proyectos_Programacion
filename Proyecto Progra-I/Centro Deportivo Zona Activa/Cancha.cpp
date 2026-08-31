@@ -1,5 +1,17 @@
 #include "Cancha.h"
 #include <iostream>
+
+
+Cancha::Cancha() {
+	Codigo = "0";
+	TipoDeporte = "Desconocido";
+	precio = 0.0;
+	for (int i = 0; i < 12; i++) {
+		franjas[i] = 'L'; // Inicializa todas las franjas como libres
+	}
+}
+
+
 Cancha::Cancha(string Codigo, string TipoDeporte, float precio) {
 	this->Codigo = Codigo;
 	this->TipoDeporte = TipoDeporte;

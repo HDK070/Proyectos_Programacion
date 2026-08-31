@@ -1,9 +1,38 @@
-﻿  Examinando orígenes para las dependencias de módulo...
+﻿  Scanning sources for module dependencies...
   GestionCanchas.h
-  Compilando...
+  Compiling...
   GestionCanchas.h
-  Cancha.cpp
   GestionCanchas.cpp
+  gestionClientes.cpp
+  gestionListado.cpp
+  GestionReserva.cpp
+C:\Users\Sebas\Desktop\repositorios\Proyecto Progra-I\Centro Deportivo Zona Activa\gestionListado.h(11,11): error C2374: 'MAX': redefinition; multiple initialization
+  (compiling source file 'gestionListado.cpp')
+      C:\Users\Sebas\Desktop\repositorios\Proyecto Progra-I\Centro Deportivo Zona Activa\gestionClientes.h(8,11):
+      see declaration of 'MAX'
+  
+C:\Users\Sebas\Desktop\repositorios\Proyecto Progra-I\Centro Deportivo Zona Activa\gestionListado.h(11,11): error C2086: 'const int MAX': redefinition
+  (compiling source file 'gestionListado.cpp')
+      C:\Users\Sebas\Desktop\repositorios\Proyecto Progra-I\Centro Deportivo Zona Activa\gestionClientes.h(8,11):
+      see declaration of 'MAX'
+  
+  listadoEspera.cpp
+C:\Users\Sebas\Desktop\repositorios\Proyecto Progra-I\Centro Deportivo Zona Activa\listadoEspera.cpp(9,16): error C2511: 'listadoEspera::listadoEspera(int,cliente *,Cancha *,char,char)': overloaded member function not found in 'listadoEspera'
+      C:\Users\Sebas\Desktop\repositorios\Proyecto Progra-I\Centro Deportivo Zona Activa\listadoEspera.h(10,7):
+      see declaration of 'listadoEspera'
+  
+C:\Users\Sebas\Desktop\repositorios\Proyecto Progra-I\Centro Deportivo Zona Activa\listadoEspera.cpp(10,2): error C2671: 'listadoEspera::{ctor}': static member functions do not have 'this' pointers
+C:\Users\Sebas\Desktop\repositorios\Proyecto Progra-I\Centro Deportivo Zona Activa\listadoEspera.cpp(11,2): error C2671: 'listadoEspera::{ctor}': static member functions do not have 'this' pointers
+C:\Users\Sebas\Desktop\repositorios\Proyecto Progra-I\Centro Deportivo Zona Activa\listadoEspera.cpp(12,2): error C2671: 'listadoEspera::{ctor}': static member functions do not have 'this' pointers
+C:\Users\Sebas\Desktop\repositorios\Proyecto Progra-I\Centro Deportivo Zona Activa\listadoEspera.cpp(13,2): error C2671: 'listadoEspera::{ctor}': static member functions do not have 'this' pointers
+C:\Users\Sebas\Desktop\repositorios\Proyecto Progra-I\Centro Deportivo Zona Activa\listadoEspera.cpp(14,2): error C2671: 'listadoEspera::{ctor}': static member functions do not have 'this' pointers
+C:\Users\Sebas\Desktop\repositorios\Proyecto Progra-I\Centro Deportivo Zona Activa\listadoEspera.cpp(29,21): error C2511: 'void listadoEspera::setEstado(char)': overloaded member function not found in 'listadoEspera'
+      C:\Users\Sebas\Desktop\repositorios\Proyecto Progra-I\Centro Deportivo Zona Activa\listadoEspera.h(10,7):
+      see declaration of 'listadoEspera'
+  
+C:\Users\Sebas\Desktop\repositorios\Proyecto Progra-I\Centro Deportivo Zona Activa\listadoEspera.cpp(30,2): error C2671: 'listadoEspera::setEstado': static member functions do not have 'this' pointers
   Main.cpp
-  Generando código...
-  Centro Deportivo Zona Activa.vcxproj -> C:\Users\castr\Documents\GitHub\Proyectos_Programacion\Proyecto Progra-I\Centro Deportivo Zona Activa\x64\Debug\Centro Deportivo Zona Activa.exe
+  ReporteEstadistica.cpp
+  Reserva.cpp
+  Generating Code...
+C:\Users\Sebas\Desktop\repositorios\Proyecto Progra-I\Centro Deportivo Zona Activa\gestionClientes.cpp(61,1): warning C4715: 'gestionClientes::toString': not all control paths return a value

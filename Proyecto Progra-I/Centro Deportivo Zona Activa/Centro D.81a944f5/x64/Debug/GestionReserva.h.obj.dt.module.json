@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "Centro D.81a944f5\\x64\\Debug\\GestionReserva.obj",
+            "outputs": [
+                "Centro D.81a944f5\\x64\\Debug\\GestionReserva.h.obj.dt.module.json",
+                "Centro D.81a944f5\\x64\\Debug\\GestionReserva.h.obj.dt.d.json"
+            ],
+            "requires": []
+        }
+    ]
+}
