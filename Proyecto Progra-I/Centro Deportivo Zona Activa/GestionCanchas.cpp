@@ -14,12 +14,12 @@ string GestionCanchas::horafranjas(int indice) {
 }
 void GestionCanchas::RegistrarCancha() {
 	if (contador >= 10) {
-		cout << "No se pueden registrar más canchas." << endl;
+		cout << "No se pueden registrar m"<<char(160)<<"s canchas." << endl;
 		return;
 	}
 	string codigo, tipoDeporte;
 	float precio;
-	cout << "Ingrese el código de la cancha: ";
+	cout << "Ingrese el c"<<char(162)<<"digo de la cancha : ";
 	cin >> codigo;
 	cout << "Ingrese el tipo de deporte: ";
 	cin >> tipoDeporte;
@@ -36,7 +36,7 @@ void GestionCanchas::MostrarCanchas() {
 		return;
 	}
 	for (int i = 0; i < contador; i++) {
-		cout << "Código: " << canchas[i]->getCodigo() << ", Tipo de Deporte: " << canchas[i]->getTipoDeporte() << ", Precio: " << canchas[i]->getPrecio() << endl;
+		cout << "C"<<char(162)<<"digo: " << canchas[i]->getCodigo() << ", Tipo de Deporte : " << canchas[i]->getTipoDeporte() << ", Precio : " << canchas[i]->getPrecio() << endl;
 	}
 }
 Cancha* GestionCanchas::BuscarCancha(string codigo) {

@@ -148,6 +148,7 @@
     <ClCompile Include="GestionReserva.cpp" />
     <ClCompile Include="listadoEspera.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Menu.cpp" />
     <ClCompile Include="ReporteEstadistica.cpp" />
     <ClCompile Include="Reserva.cpp" />
   </ItemGroup>
@@ -158,6 +159,7 @@
     <ClInclude Include="gestionListado.h" />
     <ClInclude Include="GestionReserva.h" />
     <ClInclude Include="listadoEspera.h" />
+    <ClInclude Include="Menu.h" />
     <ClInclude Include="ReporteEstadistica.h" />
     <ClInclude Include="Reserva.h" />
   </ItemGroup>
