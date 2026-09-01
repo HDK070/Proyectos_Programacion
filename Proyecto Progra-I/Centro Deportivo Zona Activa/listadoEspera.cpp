@@ -6,9 +6,9 @@ listadoEspera::listadoEspera() {
 	estado = 'y';
 }
 
-listadoEspera::listadoEspera(int numConsecutivo, cliente* clientePtr, Cancha* canchaPtr, char franja, char estado) {
+listadoEspera::listadoEspera(int numConsecutivo, cliente* clientePtr, Cancha* canchaPtr, char franja, string estado) {
 	this->numConsecutivo = numConsecutivo;
-	this->clientePtr = clientePtr;
+	this-> clientePtr = clientePtr;
 	this->canchaPtr = canchaPtr;
 	this->franja = franja;
 	this->estado = estado;
@@ -26,7 +26,7 @@ void listadoEspera::setFranja(char franja) {
 	this->franja = franja;
 }
 
-void listadoEspera::setEstado(char estado) {
+void listadoEspera::setEstado(string estado) {
 	this->estado = estado;
 }
 

@@ -8,9 +8,9 @@
 using namespace std;
 
 
-const int MAX = 10;
+const int Maximo = 10;
 class gestionListado{
-	listadoEspera* num[MAX];
+	listadoEspera* num[Maximo];
 	int cantidad=0;
 public:
 
