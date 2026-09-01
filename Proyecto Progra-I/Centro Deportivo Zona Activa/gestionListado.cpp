@@ -20,7 +20,16 @@ gestionListado::~gestionListado() {
 	}
 	cantidad = 0;
 }
-
+bool gestionListado::existeDuplicado(cliente* clientePtr, Cancha* canchaPtr,int posicionfranja) {
+	for (int i = 0; i < cantidad; i++) {
+		if( num[i]-> == clientePtr &&
+			num[i]-> == canchaPtr &&
+			num[i]-> == posicionfranja) {
+			return false;
+		}
+	}
+	return true;
+}
 void gestionListado::registrarCliente(cliente* clientePtr, Cancha* canchaPtr) {
 	if (clientePtr == nullptr) {
 		cout << "Error: puntero a cliente nulo." << endl;
