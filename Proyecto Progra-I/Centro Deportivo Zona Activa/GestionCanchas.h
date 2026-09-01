@@ -9,6 +9,7 @@ private:
 	int contador;
 public:
 	GestionCanchas();
+	string horafranjas(int indice);
 	void RegistrarCancha();
 	void MostrarCanchas();
 	Cancha* BuscarCancha(string codigo);
@@ -17,4 +18,5 @@ public:
 	int getContador();
 	Cancha* obtenerCancha(int indice);
 	~GestionCanchas();
+
 };

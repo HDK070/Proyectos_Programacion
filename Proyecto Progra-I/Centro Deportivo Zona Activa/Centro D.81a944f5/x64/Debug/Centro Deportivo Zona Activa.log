@@ -1,8 +1,2 @@
 ﻿  Examinando orígenes para las dependencias de módulo...
-  gestionListado.cpp
-  listadoEspera.cpp
-  Reserva.cpp
-  Generando código...
-  LINK : no se encontró C:\Users\castr\Documents\GitHub\Proyectos_Programacion\Proyecto Progra-I\Centro Deportivo Zona Activa\x64\Debug\Centro Deportivo Zona Activa.exe o no lo generó el último vínculo incremental; ejecutando vínculo completo
-gestionListado.obj : error LNK2019: símbolo externo "public: bool __cdecl gestionListado::existeDuplicado(class cliente *,class Cancha *)" (?existeDuplicado@gestionListado@@QEAA_NPEAVcliente@@PEAVCancha@@@Z) sin resolver al que se hace referencia en la función "public: void __cdecl gestionListado::registrarCliente(class cliente *,class Cancha *)" (?registrarCliente@gestionListado@@QEAAXPEAVcliente@@PEAVCancha@@@Z)
-C:\Users\castr\Documents\GitHub\Proyectos_Programacion\Proyecto Progra-I\Centro Deportivo Zona Activa\x64\Debug\Centro Deportivo Zona Activa.exe : fatal error LNK1120: 1 externos sin resolver
+  Centro Deportivo Zona Activa.vcxproj -> C:\Users\castr\Documents\GitHub\Proyectos_Programacion\Proyecto Progra-I\Centro Deportivo Zona Activa\x64\Debug\Centro Deportivo Zona Activa.exe

@@ -7,7 +7,11 @@ GestionCanchas::GestionCanchas() {
 		canchas[i] = nullptr;
 	}
 }
-
+string GestionCanchas::horafranjas(int indice) {
+	int horaInicio = 8 + indice;
+	string hh = (horaInicio < 10 ? "0" : "") + to_string(horaInicio);
+	return hh + ":00";
+}
 void GestionCanchas::RegistrarCancha() {
 	if (contador >= 10) {
 		cout << "No se pueden registrar más canchas." << endl;
@@ -54,22 +58,7 @@ void GestionCanchas::mostrarDisponibilidad(string codigo) {
 	cout << "Disponibilidad de la cancha " << codigo << ":" << endl;
 	for (int i = 0; i < 12; i++) {
 		char estado = cancha->getFranja(i);
-		cout << "Franja " << i << ": ";
-
-		switch (estado) {
-		case 'L':
-			cout << "Libre";
-			break;
-		case 'O':
-			cout << "Ocupada";
-			disponible = false;
-			break;
-		case 'M':
-			cout << "Mantenimiento";
-			disponible = false;
-			break;
-		}
-		cout << endl;
+		cout << horafranjas(i) << ": " << estado << endl;;
 	}
 
 	if (disponible) {

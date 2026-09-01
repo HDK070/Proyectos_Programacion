@@ -22,28 +22,23 @@ gestionListado::~gestionListado() {
 }
 bool gestionListado::existeDuplicado(cliente* clientePtr, Cancha* canchaPtr,int posicionfranja) {
 	for (int i = 0; i < cantidad; i++) {
-		if( num[i]-> == clientePtr &&
-			num[i]-> == canchaPtr &&
-			num[i]-> == posicionfranja) {
+		if( num[i] != nullptr &&
+			num[i]->getCliente() == clientePtr &&
+			num[i]->getCancha() == canchaPtr &&
+			num[i]->getposicionFranja() == posicionfranja) {
 			return false;
 		}
 	}
 	return true;
 }
 void gestionListado::registrarCliente(cliente* clientePtr, Cancha* canchaPtr) {
-	if (clientePtr == nullptr) {
-		cout << "Error: puntero a cliente nulo." << endl;
+	if (clientePtr == nullptr || canchaPtr == nullptr) {
+		cout << "Error: Cliente o Cancha invalido." << endl;
 		return;
 	}
 
 	if (cantidad >= MAX) {
 		cout << "No se pueden registrar mas clientes." << endl;
-		return;
-	}
-
-	// Si se detecta duplicado para la misma cancha, no registrar
-	if (existeDuplicado(clientePtr, canchaPtr)) {
-		cout << "El cliente ya se encuentra en el listado de espera para esa cancha." << endl;
 		return;
 	}
 
@@ -58,8 +53,8 @@ void gestionListado::registrarCliente(cliente* clientePtr, Cancha* canchaPtr) {
 	
 	// Obtener franja específica de la cancha si se proporciona
 	char franja = '0'; // valor por defecto = no asignado
+	int posicion = -1;
 	if (canchaPtr != nullptr) {
-		int posicion = -1;
 		cout << "Ingrese la posicion de la franja (0-11) para la cancha: ";
 		if (!(cin >> posicion)) {
 			// entrada no valida, limpiar buffer y mantener valor por defecto
@@ -74,7 +69,14 @@ void gestionListado::registrarCliente(cliente* clientePtr, Cancha* canchaPtr) {
 		}
 	}
 
-	num[cantidad] = new listadoEspera(nextConsecutivo, clientePtr, canchaPtr, franja, "esperando");
+	// Si se detecta duplicado para la misma cancha, no registrar
+	if (existeDuplicado(clientePtr, canchaPtr, posicion)) {
+		cout << "El cliente ya se encuentra en el listado de espera para esa cancha." << endl;
+		return;
+	}
+
+
+	num[cantidad] = new listadoEspera(nextConsecutivo, clientePtr, canchaPtr, franja, "esperando",posicion);
 	cantidad++;
 
 	cout << "Cliente registrado en listado de espera con numero " << nextConsecutivo << "." << endl;

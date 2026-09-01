@@ -14,15 +14,20 @@ private:
 	Cancha* canchaPtr;
 	char franja;
 	string estado;
+	int posicionFranja;
 
 public:
 	listadoEspera();
-	listadoEspera(int numConsecutivo, cliente* clientePtr,Cancha* canchaPtr, char franja, string estado);
+	listadoEspera(int numConsecutivo, cliente* clientePtr,Cancha* canchaPtr, char franja, string estado,int posicionFranja);
 	void setCliente(cliente* clientePtr);
 	void setCancha(Cancha* canchaPtr);
 	void setFranja(char franja);
 	void setEstado(string estado);
 	int getNumConsecutivo();
-
+	cliente* getCliente();
+	Cancha* getCancha();
+	char getFranja();
+	string getEstado();
+	int getposicionFranja();
 };
 
