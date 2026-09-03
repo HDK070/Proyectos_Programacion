@@ -1,4 +1,5 @@
 #include "GestionReserva.h"
+#include "Utilidades.h"
 #include <iostream>
 using namespace std;
 
@@ -130,6 +131,19 @@ void GestionReserva::MostrarReservasPorCancha(string codigoCancha) {
 	}
 }
 
+void GestionReserva::MostrarReservasPorCliente(int identificacion) {
+	bool encontroAlguna = false;
+	for (int i = 0;i < contador;i++) {
+		if (reservas[i]->getCliente() != nullptr && reservas[i]->getCliente()->getIdentificacion() == identificacion) {
+			cout << reservas[i]->toString() << endl;
+			encontroAlguna = true;
+		}
+	}
+	if (!encontroAlguna) {
+		cout << "No hay reservas para ese cliente\n";
+	}
+}
+
 void GestionReserva::CancelarReserva(int numero) {
 	Reserva* r = BuscarReserva(numero);
 	if (r == nullptr) {
@@ -153,13 +167,70 @@ void GestionReserva::CancelarReserva(int numero) {
 	
 }
 
-int GestionReserva::getContador() {
+int GestionReserva::getContador() const{
 	return contador;
 }
 
-Reserva* GestionReserva::obtenerReserva(int indice) {
+Reserva* GestionReserva::obtenerReserva(int indice) const{
 	if (indice < 0 || indice >= contador) {
 		return nullptr;
 	}
 	return reservas[indice];
+}
+
+void GestionReserva::submenuGR() {
+	int opcion;
+	do {
+		limpiarPantalla();
+		cout << "\n===== GESTION DE RESERVAS =====\n";
+		cout << "1. Registrar reserva\n";
+		cout << "2. Mostrar todas las reservas\n";
+		cout << "3. Buscar reserva por numero\n";
+		cout << "4. Mostrar reservas de una cancha\n";
+		cout << "5. Cancelar una reserva\n";
+		cout << "6. volver al menu principal\n";
+		cout << "Seleccione una opci" << char(162) << "\n";
+		cin >> opcion;
+
+		if (cin.fail()) {
+			cin.clear();
+			cin.ignore(100, '\n');
+			cout << "Entrada invalida." << endl;
+			continue;
+		}
+		int numero;
+		string codigoCancha;
+		switch (opcion) {
+		case 1:
+			RegistrarReserva(); pausar();
+			break;
+		case 2:
+			MostrarReservas(); pausar();
+			break;
+		case 3:
+			cout << "Ingrese el numero de reserva: ";
+			cin >> numero;
+			{
+				Reserva* r = BuscarReserva(numero);
+				if (r != nullptr) cout << r->toString() << endl;
+				else cout << "Reserva no encontrada." << endl;
+			}
+			pausar();
+			break;
+		case 4:
+			cout << "Ingrese el codigo de la cancha: ";
+			cin >> codigoCancha;
+			MostrarReservasPorCancha(codigoCancha); pausar();
+			break;
+		case 5:
+			cout << "Ingrese el numero de reserva a cancelar: ";
+			cin >> numero;
+			CancelarReserva(numero); pausar();
+			break;
+		case 6:
+			break;
+		default:
+			cout << "Opci" << char(162) << "n invalida." << endl;
+		}
+	} while (opcion != 6);
 }

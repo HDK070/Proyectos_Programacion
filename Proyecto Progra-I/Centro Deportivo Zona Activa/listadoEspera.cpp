@@ -2,6 +2,8 @@
 
 listadoEspera::listadoEspera() {
 	numConsecutivo = 0;
+	canchaPtr = nullptr;
+	clientePtr = nullptr;
 	franja = 'H';
 	estado = 'y';
 	posicionFranja = -1;

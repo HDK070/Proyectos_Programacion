@@ -1,10 +1,12 @@
 #include "Menu.h"
 #include <iostream>
+#include "Utilidades.h"
 using namespace std;
 
 void menuPrincipal(GestionCanchas& canchas, gestionClientes& clientes, GestionReserva& reservas, ReporteEstadisticas& Reportes) {
 	int opcion;
 	do {
+		limpiarPantalla();
 		cout << "\n===== CENTRO DEPORTIVO ZONA ACTIVA =====\n";
 		cout << "1. Gestion de canchas\n";
 		cout << "2. Gestion de clientes\n";
@@ -17,13 +19,13 @@ void menuPrincipal(GestionCanchas& canchas, gestionClientes& clientes, GestionRe
 
 		switch (opcion) {
 		case 1:
-			canchas.RegistrarCancha();
+			canchas.submenuGC();
 			break;
 		case 2:
-			clientes.registrarClientes();
+			clientes.submenuGClientes(&reservas);
 			break;
 		case 3:
-			reservas.RegistrarReserva();
+			reservas.submenuGR();
 			break;
 		case 4:
 			cout << "(Modulo de listado de espera pendiente de otro integrante)\n";

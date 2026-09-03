@@ -5,6 +5,8 @@
 #include "clientes.h"
 using namespace std;
 
+class GestionReserva;
+
 const int MAX = 100;
 class gestionClientes {
 private:
@@ -20,5 +22,6 @@ public:
 	string toString(int identificacion);
 	int getCantidadClientes();
 	cliente* obtenerCliente(int indice);
+	void submenuGClientes(GestionReserva* misReservas);
 };
 

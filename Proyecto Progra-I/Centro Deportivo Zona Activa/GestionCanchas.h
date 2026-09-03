@@ -18,5 +18,5 @@ public:
 	int getContador();
 	Cancha* obtenerCancha(int indice);
 	~GestionCanchas();
-
+	void submenuGC();
 };

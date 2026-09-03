@@ -151,6 +151,7 @@
     <ClCompile Include="Menu.cpp" />
     <ClCompile Include="ReporteEstadistica.cpp" />
     <ClCompile Include="Reserva.cpp" />
+    <ClCompile Include="Utilidades.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Cancha.h" />
@@ -162,6 +163,7 @@
     <ClInclude Include="Menu.h" />
     <ClInclude Include="ReporteEstadistica.h" />
     <ClInclude Include="Reserva.h" />
+    <ClInclude Include="Utilidades.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

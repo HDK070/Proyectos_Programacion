@@ -4,7 +4,7 @@
 #include <iostream>
 #include <sstream>
 #include <string>
-
+#include "Utilidades.h"
 gestionClientes::gestionClientes() {
 	for (int i = 0; i < MAX; i++) {
 		clientes[i] = nullptr;
@@ -56,8 +56,8 @@ string gestionClientes::toString(int identificacion) {
 		if (clientes[i]->getIdentificacion() == identificacion) {
 			return clientes[i]->toString();
 		}
-		return string("Cliente no encontrado");
 	}
+		return string("Cliente no encontrado");
 }
 
 string gestionClientes::listado() {
@@ -82,4 +82,55 @@ cliente* gestionClientes::obtenerCliente(int indice) {
 	return clientes[indice];
 }
 
+void gestionClientes::submenuGClientes(GestionReserva* misReservas) {
+	int opcion;
+	do {
+		limpiarPantalla();
+		cout << "\n===== GESTION DE CLIENTES =====\n";
+		cout << "1. Registrar cliente\n";
+		cout << "2. Eliminar cliente\n";
+		cout << "3. Mostrar listado de clientes\n";
+		cout << "4. Buscar cliente por identificaci"<<char(162)<<"\n";
+		cout << "5. Mostrar reservas de un cliente\n";
+		cout << "6. volver al menu principal\n";
+		cout << "Seleccione una opci"<<char(162)<<"\n";
+		cin >> opcion;
 
+		if (cin.fail()) {
+			cin.clear();
+			cin.ignore(100, '\n');
+			cout << "Entrada invalida." << endl;
+			continue;
+		}
+		int identificacion;
+		switch (opcion) {
+		case 1:
+			registrarClientes(); pausar();
+			break;
+		case 2:
+			cout << "Ingrese la identificacion del cliente: ";
+			cin >> identificacion;
+			eliminarCliente(identificacion); pausar();
+			break;
+		case 3:
+			cout << listado();
+			break;
+		case 4:
+			cout << "Ingrese la identificacion del cliente: ";
+			cin >> identificacion;
+			cout << toString(identificacion);
+			pausar();
+			break;
+		case 5:
+			cout << "Ingrese la identificacion del cliente: ";
+			cin >> identificacion;
+			misReservas->MostrarReservasPorCliente(identificacion);
+			pausar();
+			break;
+		case 6:
+			break;
+		default:
+			cout << "Opci" << char(162) << "n invalida." << endl;
+		}
+	} while (opcion != 6);
+}

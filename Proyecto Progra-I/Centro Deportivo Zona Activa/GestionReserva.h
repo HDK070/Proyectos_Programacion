@@ -22,9 +22,11 @@ public:
 
 	void RegistrarReserva();
 	void MostrarReservas();
+	void MostrarReservasPorCliente(int identificacion);
 	Reserva* BuscarReserva(int numero);
 	void MostrarReservasPorCancha(string codigoCancha);
 	void CancelarReserva(int numero);
-	int getContador();
-	Reserva* obtenerReserva(int indice);
+	int getContador() const;
+	Reserva* obtenerReserva(int indice) const;
+	void submenuGR();
 };
