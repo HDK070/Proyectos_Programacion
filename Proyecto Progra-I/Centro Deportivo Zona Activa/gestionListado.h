@@ -22,7 +22,7 @@ public:
 	bool existeDuplicado(cliente* clientePtr, Cancha* canchaPtr, int posicionfranja);
 	bool hayEsperandoPara(Cancha* canchaPtr, int posicionfranja);
 	void cambiarEstado();
->>>>>>> 26cd56b1b56f8ca66d5565f3f62bdb431fe5c675
+
 
 };
 

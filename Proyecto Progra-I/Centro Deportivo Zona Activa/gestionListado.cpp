@@ -14,17 +14,16 @@ gestionListado::gestionListado() {
 	cantidad = 0;
 }
 gestionListado::~gestionListado() {
-<<<<<<< HEAD
 	for (int i = 0; i < Maximo; ++i) {
-=======
 	for (int i = 0; i < cantidad; ++i) {
->>>>>>> 26cd56b1b56f8ca66d5565f3f62bdb431fe5c675
 		delete num[i];
 		num[i] = nullptr;
 	}
 	cantidad = 0;
 }
-bool gestionListado::existeDuplicado(cliente* clientePtr, Cancha* canchaPtr,int posicionfranja) {
+
+	bool gestionListado::existeDuplicado(cliente * clientePtr, Cancha * canchaPtr, int posicionfranja) {
+
 	for (int i = 0; i < cantidad; i++) {
 		if( num[i] != nullptr &&
 			num[i]->getCliente() == clientePtr &&num[i]->getCancha() == canchaPtr ) {
@@ -33,6 +32,7 @@ bool gestionListado::existeDuplicado(cliente* clientePtr, Cancha* canchaPtr,int 
 	}
 	return true;
 }
+
 void gestionListado::registrarCliente(cliente* clientePtr, Cancha* canchaPtr,int posicionfranja) {
 	if (clientePtr == nullptr || canchaPtr == nullptr) {
 		cout << "Error: Cliente o Cancha invalido." << endl;
@@ -58,9 +58,7 @@ void gestionListado::registrarCliente(cliente* clientePtr, Cancha* canchaPtr,int
 		}
 	}
 
-	
 
-	// Si se detecta duplicado para la misma cancha, no registrar
 	if (existeDuplicado(clientePtr, canchaPtr, posicionfranja)) {
 		cout << "El cliente ya se encuentra en el listado de espera para esa cancha." << endl;
 		return;
@@ -72,7 +70,6 @@ void gestionListado::registrarCliente(cliente* clientePtr, Cancha* canchaPtr,int
 	cout << "Cliente registrado en listado de espera con numero " << nextConsecutivo << "." << endl;
 }
 
-<<<<<<< HEAD
 bool gestionListado::hayEsperandoPara(Cancha* canchaPtr, int posicionFranja) {
 	for (int i = 0; i < cantidad;i++) {
 		if (num[i] != nullptr && num[i]->getCancha() == canchaPtr &&
@@ -89,4 +86,5 @@ void gestionListado::cambiarEstado() {
 }
 
 
->>>>>>> 26cd56b1b56f8ca66d5565f3f62bdb431fe5c675
+
+
