@@ -16,10 +16,11 @@ public:
 
 	gestionListado();
 	~gestionListado();
-	void registrarCliente(cliente* clientePtr, Cancha* canchaPtr);
+	void registrarCliente(cliente* clientePtr, Cancha* canchaPtr, int posicionfranja);
 	string listado();
 	string toString(int numConsecutivo);
 	bool existeDuplicado(cliente* clientePtr,Cancha* canchaPtr,int posicionfranja);
+	void cambiarEstado();
 
 };
 

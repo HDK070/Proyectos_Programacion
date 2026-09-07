@@ -14,7 +14,7 @@ gestionListado::gestionListado() {
 	cantidad = 0;
 }
 gestionListado::~gestionListado() {
-	for (int i = 0; i < MAX; ++i) {
+	for (int i = 0; i < cantidad; ++i) {
 		delete num[i];
 		num[i] = nullptr;
 	}
@@ -31,7 +31,7 @@ bool gestionListado::existeDuplicado(cliente* clientePtr, Cancha* canchaPtr,int 
 	}
 	return true;
 }
-void gestionListado::registrarCliente(cliente* clientePtr, Cancha* canchaPtr) {
+void gestionListado::registrarCliente(cliente* clientePtr, Cancha* canchaPtr,int posicionfranja) {
 	if (clientePtr == nullptr || canchaPtr == nullptr) {
 		cout << "Error: Cliente o Cancha invalido." << endl;
 		return;
@@ -75,11 +75,14 @@ void gestionListado::registrarCliente(cliente* clientePtr, Cancha* canchaPtr) {
 		return;
 	}
 
-
 	num[cantidad] = new listadoEspera(nextConsecutivo, clientePtr, canchaPtr, franja, "esperando",posicion);
 	cantidad++;
 
 	cout << "Cliente registrado en listado de espera con numero " << nextConsecutivo << "." << endl;
+}
+
+void gestionListado::cambiarEstado() {
+
 }
 
 
