@@ -14,7 +14,11 @@ gestionListado::gestionListado() {
 	cantidad = 0;
 }
 gestionListado::~gestionListado() {
+<<<<<<< HEAD
 	for (int i = 0; i < Maximo; ++i) {
+=======
+	for (int i = 0; i < cantidad; ++i) {
+>>>>>>> 26cd56b1b56f8ca66d5565f3f62bdb431fe5c675
 		delete num[i];
 		num[i] = nullptr;
 	}
@@ -31,7 +35,7 @@ bool gestionListado::existeDuplicado(cliente* clientePtr, Cancha* canchaPtr,int 
 	}
 	return true;
 }
-void gestionListado::registrarCliente(cliente* clientePtr, Cancha* canchaPtr) {
+void gestionListado::registrarCliente(cliente* clientePtr, Cancha* canchaPtr,int posicionfranja) {
 	if (clientePtr == nullptr || canchaPtr == nullptr) {
 		cout << "Error: Cliente o Cancha invalido." << endl;
 		return;
@@ -75,13 +79,13 @@ void gestionListado::registrarCliente(cliente* clientePtr, Cancha* canchaPtr) {
 		return;
 	}
 
-
 	num[cantidad] = new listadoEspera(nextConsecutivo, clientePtr, canchaPtr, franja, "esperando",posicion);
 	cantidad++;
 
 	cout << "Cliente registrado en listado de espera con numero " << nextConsecutivo << "." << endl;
 }
 
+<<<<<<< HEAD
 bool gestionListado::hayEsperandoPara(Cancha* canchaPtr, int posicionFranja) {
 	for (int i = 0; i < cantidad;i++) {
 		if (num[i] != nullptr && num[i]->getCancha() == canchaPtr &&
@@ -92,3 +96,10 @@ bool gestionListado::hayEsperandoPara(Cancha* canchaPtr, int posicionFranja) {
 	}
 	return false;
 }
+=======
+void gestionListado::cambiarEstado() {
+
+}
+
+
+>>>>>>> 26cd56b1b56f8ca66d5565f3f62bdb431fe5c675
