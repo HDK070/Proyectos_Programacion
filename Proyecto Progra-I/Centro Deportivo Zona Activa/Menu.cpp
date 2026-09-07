@@ -3,7 +3,7 @@
 #include "Utilidades.h"
 using namespace std;
 
-void menuPrincipal(GestionCanchas& canchas, gestionClientes& clientes, GestionReserva& reservas, ReporteEstadisticas& Reportes) {
+void menuPrincipal(GestionCanchas& canchas, gestionClientes& clientes, GestionReserva& reservas,gestionListado& listado, ReporteEstadisticas& Reportes) {
 	int opcion;
 	do {
 		limpiarPantalla();

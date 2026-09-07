@@ -8,13 +8,17 @@
 using namespace std;
 
 gestionListado::gestionListado() {
-	for (int i = 0; i < MAX; i++) {
+	for (int i = 0; i < Maximo; i++) {
 		num[i] = nullptr;
 	}
 	cantidad = 0;
 }
 gestionListado::~gestionListado() {
+<<<<<<< HEAD
+	for (int i = 0; i < Maximo; ++i) {
+=======
 	for (int i = 0; i < cantidad; ++i) {
+>>>>>>> 26cd56b1b56f8ca66d5565f3f62bdb431fe5c675
 		delete num[i];
 		num[i] = nullptr;
 	}
@@ -68,8 +72,21 @@ void gestionListado::registrarCliente(cliente* clientePtr, Cancha* canchaPtr,int
 	cout << "Cliente registrado en listado de espera con numero " << nextConsecutivo << "." << endl;
 }
 
+<<<<<<< HEAD
+bool gestionListado::hayEsperandoPara(Cancha* canchaPtr, int posicionFranja) {
+	for (int i = 0; i < cantidad;i++) {
+		if (num[i] != nullptr && num[i]->getCancha() == canchaPtr &&
+			num[i]->getposicionFranja() == posicionFranja &&
+			num[i]->getEstado() == "esperando") {
+			return true;
+		}
+	}
+	return false;
+}
+=======
 void gestionListado::cambiarEstado() {
 
 }
 
 
+>>>>>>> 26cd56b1b56f8ca66d5565f3f62bdb431fe5c675

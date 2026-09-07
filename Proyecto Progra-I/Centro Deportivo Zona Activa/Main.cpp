@@ -4,10 +4,11 @@
 int main() {
 	GestionCanchas canchas;
 	gestionClientes clientes;
-	GestionReserva reservas(&canchas, &clientes);
+	gestionListado listado;
+	GestionReserva reservas(&canchas, &clientes, &listado);
 	ReporteEstadisticas reportes(&canchas, &clientes, &reservas);
 
-	menuPrincipal(canchas, clientes, reservas, reportes);
+	menuPrincipal(canchas, clientes, reservas, listado, reportes);
 
 	return 0;
 }
