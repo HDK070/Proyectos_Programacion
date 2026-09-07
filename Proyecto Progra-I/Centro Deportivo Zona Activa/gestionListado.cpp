@@ -8,13 +8,13 @@
 using namespace std;
 
 gestionListado::gestionListado() {
-	for (int i = 0; i < MAX; i++) {
+	for (int i = 0; i < Maximo; i++) {
 		num[i] = nullptr;
 	}
 	cantidad = 0;
 }
 gestionListado::~gestionListado() {
-	for (int i = 0; i < MAX; ++i) {
+	for (int i = 0; i < Maximo; ++i) {
 		delete num[i];
 		num[i] = nullptr;
 	}
@@ -82,4 +82,13 @@ void gestionListado::registrarCliente(cliente* clientePtr, Cancha* canchaPtr) {
 	cout << "Cliente registrado en listado de espera con numero " << nextConsecutivo << "." << endl;
 }
 
-
+bool gestionListado::hayEsperandoPara(Cancha* canchaPtr, int posicionFranja) {
+	for (int i = 0; i < cantidad;i++) {
+		if (num[i] != nullptr && num[i]->getCancha() == canchaPtr &&
+			num[i]->getposicionFranja() == posicionFranja &&
+			num[i]->getEstado() == "esperando") {
+			return true;
+		}
+	}
+	return false;
+}

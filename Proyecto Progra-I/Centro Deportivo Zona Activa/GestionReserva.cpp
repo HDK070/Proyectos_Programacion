@@ -3,11 +3,12 @@
 #include <iostream>
 using namespace std;
 
-GestionReserva::GestionReserva(GestionCanchas* misCanchas, gestionClientes* misClientes) {
+GestionReserva::GestionReserva(GestionCanchas* misCanchas, gestionClientes* misClientes, gestionListado* miListado) {
 	contador = 0;
 	siguienteNumero = 1;
 	this->misCanchas = misCanchas;
 	this->misClientes = misClientes;
+	this->miListado = miListado;
 	for (int i = 0; i < MAX_RESERVAS; i++) {
 		reservas[i] = nullptr;
 	}
@@ -160,6 +161,10 @@ void GestionReserva::CancelarReserva(int numero) {
 	if (c != nullptr) {
 		for (int i = r->getFranjaInicial(); i < r->getFranjaInicial() + r->getCantidadFranjas(); i++) {
 			c->setFranja(i, 'L');
+
+			if (miListado != nullptr && miListado->hayEsperandoPara(c, i)) {
+				cout << "Aviso: hay cliente(s) esperando por la cancha. " << c->getCodigo() << " en la franja " << i << "." << endl;
+			}
 		}
 	}
 	cout << "Reserva cancelada. Las franjas quedaron libres." << endl;
@@ -189,7 +194,7 @@ void GestionReserva::submenuGR() {
 		cout << "4. Mostrar reservas de una cancha\n";
 		cout << "5. Cancelar una reserva\n";
 		cout << "6. volver al menu principal\n";
-		cout << "Seleccione una opci" << char(162) << "\n";
+		cout << "Seleccione una opci" << char(162) << "n\n";
 		cin >> opcion;
 
 		if (cin.fail()) {

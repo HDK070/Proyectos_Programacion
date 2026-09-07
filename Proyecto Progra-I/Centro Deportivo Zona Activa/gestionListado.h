@@ -20,6 +20,7 @@ public:
 	string listado();
 	string toString(int numConsecutivo);
 	bool existeDuplicado(cliente* clientePtr,Cancha* canchaPtr,int posicionfranja);
+	bool hayEsperandoPara(Cancha* canchaPtr, int posicionFranja);
 
 };
 

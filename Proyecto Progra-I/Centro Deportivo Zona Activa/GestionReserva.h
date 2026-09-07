@@ -3,6 +3,7 @@
 #include "Reserva.h"
 #include "GestionCanchas.h"
 #include "gestionClientes.h"
+#include "gestionListado.h"
 using namespace std;
 
 const int MAX_RESERVAS = 120;
@@ -15,9 +16,10 @@ private:
 	int siguienteNumero;
 	GestionCanchas* misCanchas;
 	gestionClientes* misClientes;
+	gestionListado* miListado;
 
 public:
-	GestionReserva(GestionCanchas* misCanchas, gestionClientes* misClientes);
+	GestionReserva(GestionCanchas* misCanchas, gestionClientes* misClientes,gestionListado* miListado);
 	~GestionReserva();
 
 	void RegistrarReserva();
