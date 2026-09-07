@@ -90,10 +90,10 @@ void gestionClientes::submenuGClientes(GestionReserva* misReservas) {
 		cout << "1. Registrar cliente\n";
 		cout << "2. Eliminar cliente\n";
 		cout << "3. Mostrar listado de clientes\n";
-		cout << "4. Buscar cliente por identificaci"<<char(162)<<"\n";
+		cout << "4. Buscar cliente por identificaci"<<char(162)<<"n\n";
 		cout << "5. Mostrar reservas de un cliente\n";
 		cout << "6. volver al menu principal\n";
-		cout << "Seleccione una opci"<<char(162)<<"\n";
+		cout << "Seleccione una opcio"<<char(162)<<"n\n";
 		cin >> opcion;
 
 		if (cin.fail()) {

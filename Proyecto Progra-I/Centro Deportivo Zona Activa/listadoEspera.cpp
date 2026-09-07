@@ -6,16 +6,16 @@ listadoEspera::listadoEspera() {
 	clientePtr = nullptr;
 	franja = 'H';
 	estado = 'y';
-	posicionFranja = -1;
+	
 }
 
-listadoEspera::listadoEspera(int numConsecutivo, cliente* clientePtr, Cancha* canchaPtr, char franja, string estado,int posicionFranja) {
+listadoEspera::listadoEspera(int numConsecutivo, cliente* clientePtr, Cancha* canchaPtr, char franja, string estado) {
 	this->numConsecutivo = numConsecutivo;
 	this-> clientePtr = clientePtr;
 	this->canchaPtr = canchaPtr;
 	this->franja = franja;
 	this->estado = estado;
-	this->posicionFranja = posicionFranja;
+
 }
 
 void listadoEspera::setCliente(cliente* clientePtr) {
@@ -53,6 +53,3 @@ string listadoEspera::getEstado() {
 	return estado;
 }
 
-int listadoEspera::getposicionFranja() {
-	return posicionFranja;
-}

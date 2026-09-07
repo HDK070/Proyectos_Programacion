@@ -19,7 +19,7 @@ public:
 	void registrarCliente(cliente* clientePtr, Cancha* canchaPtr, int posicionfranja);
 	string listado();
 	string toString(int numConsecutivo);
-	bool existeDuplicado(cliente* clientePtr,Cancha* canchaPtr,int posicionfranja);
+	bool existeDuplicado(cliente* clientePtr,Cancha* canchaPtr, int posicionfranja);
 	void cambiarEstado();
 
 };
