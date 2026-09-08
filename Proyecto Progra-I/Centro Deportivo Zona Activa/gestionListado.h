@@ -21,7 +21,8 @@ public:
 	string toString(int numConsecutivo);
 	bool existeDuplicado(cliente* clientePtr, Cancha* canchaPtr, int posicionfranja);
 	bool hayEsperandoPara(Cancha* canchaPtr, int posicionfranja);
-	void cambiarEstado();
+	void cambiarEstado(int numConsecutivo, string nuevoEstado);
+	void submenuGL(GestionCanchas* misCanchas, gestionClientes* misClientes);
 
 
 };

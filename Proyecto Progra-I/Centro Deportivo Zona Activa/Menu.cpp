@@ -28,7 +28,7 @@ void menuPrincipal(GestionCanchas& canchas, gestionClientes& clientes, GestionRe
 			reservas.submenuGR();
 			break;
 		case 4:
-			cout << "(Modulo de listado de espera pendiente de otro integrante)\n";
+			listado.submenuGL(&canchas,&clientes);
 			break;
 		case 5:
 			Reportes.mostrarMenu();
