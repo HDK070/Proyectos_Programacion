@@ -4,7 +4,7 @@
 #include <string>
 #include "listadoEspera.h"
 #include "gestionClientes.h"
-#include "gestionCanchas.h"
+#include "GestionCanchas.h"
 using namespace std;
 
 

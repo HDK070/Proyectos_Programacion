@@ -70,18 +70,34 @@ void GestionReserva::RegistrarReserva() {
 
 	
 	bool todasLibres = true;
+	int primeraFranjaOcupada = -1;
 	for (int i = franjaInicial; i < franjaInicial + cantidadFranjas; i++) {
 		if (canchaEncontrada->getFranja(i) != 'L') {
 			todasLibres = false;
+			primeraFranjaOcupada = i;
 			break;
 		}
 	}
 
 	if (!todasLibres) {
+		cout << "Alguna(s) franja(s) solicitada(s) no esta(n) libre(s). ";
 		
-		cout << "Alguna(s) franja(s) solicitada(s) no esta(n) libre(s). "
-			<< "No se puede registrar la reserva; considere anotar al cliente "
-			<< "en el listado de espera." << endl;
+		if (canchaEncontrada->getFranja(primeraFranjaOcupada) == 'O') {
+			char respuesta;
+			cout << "Desea anotrase en el listado de espera para la franja " << primeraFranjaOcupada << "? (s/n): ";
+			cin >> respuesta;
+
+			if (respuesta == 's' || respuesta == 'S') {
+				if (miListado != nullptr) {
+					miListado->registrarCliente(clienteEncontrado, canchaEncontrada, primeraFranjaOcupada);
+					cout << "Cliente agregado al listado de espera para la franja " << primeraFranjaOcupada << "." << endl;
+				}
+			}else {
+					cout << "No se realizo ninguna accion." << endl;
+			}
+		}else {
+				cout << "Esa franja esta en mantenimiento, no se puede anotar en espera.";
+		}
 		return;
 	}
 
