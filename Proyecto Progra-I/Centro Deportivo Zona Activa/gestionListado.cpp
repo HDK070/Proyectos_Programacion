@@ -132,8 +132,7 @@ string gestionListado::toString(int numConsecutivo) {
 
 void gestionListado::cambiarEstado(int numConsecutivo, string nuevoEstado) {
 	for (int i = 0;i < cantidad;i++) {
-		if (num[i] != nullptr &&
-			num[i]->getNumConsecutivo() == numConsecutivo) {
+		if (num[i] != nullptr && num[i]->getNumConsecutivo() == numConsecutivo) {
 			num[i]->setEstado(nuevoEstado);
 			cout << "Estado actualizado exitosamente." << endl;
 			return;
