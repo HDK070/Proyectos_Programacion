@@ -60,14 +60,11 @@ string gestionClientes::toString(int identificacion) {
 		return string("Cliente no encontrado");
 }
 
-string gestionClientes::listado() {
-	stringstream s;
+void gestionClientes::listado() {
 	for (int i = 0; i < cantidadClientes; i++) {
-		s << "------------------------" << endl;
-		s << clientes[i]->toString();
-		s << "------------------------" << endl;
+		cout<<clientes[i]->toString()<<endl;
 	}
-	return s.str();
+
 }
 
 
@@ -113,7 +110,7 @@ void gestionClientes::submenuGClientes(GestionReserva* misReservas) {
 			eliminarCliente(identificacion); pausar();
 			break;
 		case 3:
-			cout << listado();
+			 listado();
 			break;
 		case 4:
 			cout << "Ingrese la identificacion del cliente: ";
