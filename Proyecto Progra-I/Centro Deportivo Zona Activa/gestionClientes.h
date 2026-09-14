@@ -18,7 +18,7 @@ public:
 	~gestionClientes();
 	void registrarClientes();
 	string eliminarCliente(int identificacion);
-	void listado();
+	string listado();
 	string toString(int identificacion);
 	int getCantidadClientes();
 	cliente* obtenerCliente(int indice);

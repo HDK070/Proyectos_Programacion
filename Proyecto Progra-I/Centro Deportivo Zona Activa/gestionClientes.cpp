@@ -13,7 +13,7 @@ gestionClientes::gestionClientes() {
 }
 gestionClientes::~gestionClientes() {
 	for (int i = 0; i < MAX; ++i) {
-		delete clientes[i];
+		delete[] clientes;
 		clientes[i] = nullptr;
 	}
 	cantidadClientes = 0;
@@ -60,10 +60,12 @@ string gestionClientes::toString(int identificacion) {
 		return string("Cliente no encontrado");
 }
 
-void gestionClientes::listado() {
+string gestionClientes::listado() {
+	stringstream s;
 	for (int i = 0; i < cantidadClientes; i++) {
-		cout<<clientes[i]->toString()<<endl;
+		s<<clientes[i]->toString()<<endl;
 	}
+	return s.str();
 
 }
 
@@ -110,7 +112,8 @@ void gestionClientes::submenuGClientes(GestionReserva* misReservas) {
 			eliminarCliente(identificacion); pausar();
 			break;
 		case 3:
-			 listado();
+			 cout<<listado();
+			 pausar();
 			break;
 		case 4:
 			cout << "Ingrese la identificacion del cliente: ";

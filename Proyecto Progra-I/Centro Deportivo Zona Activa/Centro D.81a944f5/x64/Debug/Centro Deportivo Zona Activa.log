@@ -1,10 +1,4 @@
 ﻿  Examinando orígenes para las dependencias de módulo...
-  GestionReserva.cpp
-  Main.cpp
-  Menu.cpp
-  ReporteEstadistica.cpp
   gestionClientes.cpp
-  gestionListado.cpp
-  listadoEspera.cpp
-  Generando código...
+C:\Users\sebas\OneDrive\Documentos\GitHub\Proyectos_Programacion\Proyecto Progra-I\Centro Deportivo Zona Activa\gestionClientes.cpp(16,3): warning C4154: eliminación de una expresión de matriz; suministrada una conversión a puntero
   Centro Deportivo Zona Activa.vcxproj -> C:\Users\sebas\OneDrive\Documentos\GitHub\Proyectos_Programacion\Proyecto Progra-I\Centro Deportivo Zona Activa\x64\Debug\Centro Deportivo Zona Activa.exe
