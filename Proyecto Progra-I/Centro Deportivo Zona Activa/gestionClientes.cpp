@@ -5,6 +5,7 @@
 #include <sstream>
 #include <string>
 #include "Utilidades.h"
+
 gestionClientes::gestionClientes() {
 	for (int i = 0; i < MAX; i++) {
 		clientes[i] = nullptr;

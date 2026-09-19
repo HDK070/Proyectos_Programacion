@@ -119,7 +119,7 @@ void GestionCanchas::submenuGC() {
 		cout << "Seleccione una opcion: ";
 		cin >> opcion;
 
-		if (cin.fail()) {
+		if (cin.fail()) { 
 			cin.clear();
 			cin.ignore(100, '\n');
 			cout << "Entrada invalida." << endl;

@@ -4,7 +4,7 @@
 
 cliente::cliente() {
 	nombre = "DESCONOCIDO";
-	telefono = "0000-000";
+	telefono = "0000-0000";
 	identificacion = 0;
 }	
 

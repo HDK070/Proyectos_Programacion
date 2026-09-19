@@ -7,7 +7,7 @@ Cancha::Cancha() {
 	TipoDeporte = "Desconocido";
 	precio = 0.0;
 	for (int i = 0; i < 12; i++) {
-		franjas[i] = 'L'; // Inicializa todas las franjas como libres
+		franjas[i] = 'L'; 
 	}
 }
 
@@ -17,7 +17,7 @@ Cancha::Cancha(string Codigo, string TipoDeporte, float precio) {
 	this->TipoDeporte = TipoDeporte;
 	this->precio = precio;
 	for (int i = 0; i < 12; i++) {
-		franjas[i] = 'L'; // Inicializa todas las franjas como libres
+		franjas[i] = 'L'; 
 	}
 }
 string Cancha::getCodigo() {
